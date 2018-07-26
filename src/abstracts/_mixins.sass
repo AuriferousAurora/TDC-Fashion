@@ -1,0 +1,26 @@
+// These are flex-box mixins. The first two center their content with both 'justify-content' and 'align-items' set to a value of 'center'. The only arguments accepted are width and height, with 100% being the default values if no arguments are used.
+
+=rc-flex($w: 100%, $h: 100%)
+  display: flex
+  justify-content: center
+  align-items: center
+  width: $w
+  height: $h
+
+=cc-flex($w: 100%, $h: 100%)
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: $w
+  height: $h
+
+// This third flex-box is a customizable version of the two up above. Unlike the other two, you must select which flex-direction you want and you will need to specify values for 'justify-content', 'align-items', 'width', and 'height'.
+
+=custom-flex($direction, $justify, $align, $w, $h)
+  display: flex
+  flex-direction: $direction
+  justify-content: $justify
+  align-items: $align
+  width: $w
+  height: $h
