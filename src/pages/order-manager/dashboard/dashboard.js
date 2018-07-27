@@ -7,8 +7,8 @@ class DashboardOrderManager extends Component {
     return (
       <div className='order-dashboard'>
         <div className='order-dashboard__top-bar'>
-          <Button className={"button--settings"}></Button>
-          <Button></Button>
+          <Button className={"button--settings"}><h5>props.innerText={'cancel'}</h5></Button>
+          <Button><h5>{'save'}</h5></Button>
         </div>
       </div>
     );
