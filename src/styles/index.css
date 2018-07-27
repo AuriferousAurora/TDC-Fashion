@@ -27,6 +27,16 @@ body {
   background: #746F76;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5); }
 
+.sidebar__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%; }
+
+.sidebar__icon--dashboard {
+  background: #E2B64D; }
+
 .logo {
   display: flex;
   justify-content: center;
