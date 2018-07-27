@@ -4,6 +4,8 @@ import './styles/index.css';
 
 import OrderManager from './scenes/pages/order-manager/order-manager';
 
+import 'typeface-roboto';
+
 class App extends Component {
   render() {
     return (

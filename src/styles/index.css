@@ -13,7 +13,7 @@ body {
 .header--order-manager {
   width: 90%;
   margin-left: 10%;
-  background: red; }
+  background: #F7F7F7; }
 
 .sidebar {
   position: fixed;
@@ -24,6 +24,35 @@ body {
 
 .sidebar--order-manager {
   width: 10%;
-  background: #343434; }
+  background: #746F76;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5); }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 3em;
+  margin: 15% 10%; }
+  .logo .logo__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    background: #343434;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 2em; }
+  .logo .logo__right {
+    background: #E2B64D;
+    width: 5%;
+    height: 100%; }
+
+.order-dashboard {
+  margin-left: 10%;
+  width: 90%;
+  height: 90%;
+  background: #F7F7F7; }
 
 /*# sourceMappingURL=index.css.map */

@@ -5,7 +5,6 @@ class HeaderOrderManager extends Header {
   render() {
     return (
       <div className='header header--order-manager'>
-        <h1>Order Manager Header</h1>
       </div>
     );
   }

@@ -1,6 +1,7 @@
 import React, {Component, Fragment } from 'react';
 import HeaderOrderManager from '../../../components/base/header/header--order-manager/header--order-manager';
 import SidebarOrderManager from '../../../components/base/sidebar/sidebar--order-manager/sidebar--order-manager';
+import DashboardOrderManager from '../../sections/dashboard/dashboard';
 
 class OrderManager extends Component {
   render() {
@@ -8,8 +9,8 @@ class OrderManager extends Component {
       <Fragment>
         <HeaderOrderManager/>
         <SidebarOrderManager/>
-        {/* <OrderManagerDashboard/>
-        <OrderManagerFooter/> */}
+        <DashboardOrderManager/>
+        {/* <OrderManagerFooter/> */}
       </Fragment>
     );
   }
