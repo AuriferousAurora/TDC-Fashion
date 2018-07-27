@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import { render } from 'react-dom';
 import './styles/index.css';
 
-import OrderManager from './scenes/pages/order-manager/order-manager';
+import OrderManager from './pages/order-manager/index/order-manager';
 
 import 'typeface-roboto';
 
