@@ -16,6 +16,7 @@ class ProductInstantiation extends Component {
         </div>
         <div className='add-product-container'>
           <span className='products-label'>Products:</span>
+          <button className='add-product'>Add Product</button>
         </div>
       </div>
     );

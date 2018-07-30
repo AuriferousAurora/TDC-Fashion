@@ -25,15 +25,29 @@
   width: $w
   height: $h
 
+// New shit. Not sure if I'm gonna keep all this or tranfer it into a singular base component. Gotta learn more about React before I can decided that.
+
 =button($bg-color)
   border: none
   border-radius: $button-border-radius
   background-color: $bg-color
   width: 189px
   height: 46px
-  color: $on-primary-color
+  color: $base-white
   font-family: Arial, Helvetica, sans-serif
   font-size: 22px
   letter-spacing: -0.8px
+
+=small-button($bg-color)
+  border: none
+  border-radius: $button-border-radius
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5)
+  background-color: $bg-color
+  width: 169px
+  height: 33px
+  color: $base-white
+  font-family: Arial, Helvetica, sans-serif
+  font-size: 16px
+  letter-spacing: -0.6px
 
 
