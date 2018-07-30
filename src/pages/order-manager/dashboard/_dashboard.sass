@@ -2,18 +2,43 @@
   box-sizing: border-box
   margin-left: 10%
   padding-right: 2.875em
+  padding-left: 21px
   width: 90%
   height: 100%
   background: $background-color
-  .order-dashboard__top-bar
-    +custom-flex(row, flex-end, center, 100%, 10%)
-    border: 1px solid black
-    button
-      float: right
-      width: 11.813em
-      padding: 2em
-      background: $secondary-color
-    .button--settings
-      margin-right: 2em
-      background: $primary-color
+  
+  
+.order-dashboard__top-bar
+  +rc-flex(100%, 10%)
+  box-sizing: border-box
+  .top-bar__left
+    +custom-flex(column, flex-start, flex-start, 20%, 100%)
+    padding-top: 15px
+    .top-bar__back-order
+      margin: 0
+      width: 100px
+      height: 20px
+      font-family: Arial
+      font-size: 18px
+      letter-spacing: -1px
+      color: #51433a
+    .top-bar__new-order-title
+      margin: 0
+      height: 39px
+      font-family: Arial
+      font-size: 35px
+      font-weight: bold
+      letter-spacing: -1.9px
+      color: #51433a
+  .top-bar__right
+    +custom-flex(row, flex-end, center, 80%, 100%)
+    .top-bar__button--cancel
+      +button($primary-color)
+      margin-right: 9px
+    .top-bar__button--save
+      +button($secondary-color)
+      margin-right: 9px
+    .top-bar__button--req-quote
+      +button($primary-color-dark)
+      width: 210px
 
