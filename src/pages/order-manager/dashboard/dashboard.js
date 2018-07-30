@@ -16,7 +16,7 @@ class DashboardOrderManager extends Component {
             <button className='top-bar__button--req-quote'>REQUEST QUOTE</button>
           </div>
         </div>
-        <div className='order-dashboar-body'>
+        <div className='order-dashboard__body'>
           <ProductInstantiation/>
         </div>
       </div>

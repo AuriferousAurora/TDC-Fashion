@@ -166,9 +166,67 @@ body {
       letter-spacing: -0.8px;
       width: 210px; }
 
+.order-dashboard__body {
+  padding-top: 20px; }
+
 .product-instantiation {
   width: 100%;
-  height: 90vh;
-  border: 1px solid black; }
+  height: 278px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #FFFFFF; }
+  .product-instantiation .label-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 82px; }
+    .product-instantiation .label-container .order-number-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 241px;
+      height: 45px;
+      background-color: #51433a; }
+      .product-instantiation .label-container .order-number-label .label__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 232px;
+        height: 100%; }
+      .product-instantiation .label-container .order-number-label .order-number {
+        width: 161px;
+        height: 33px;
+        font-family: Arial;
+        font-size: 30px;
+        letter-spacing: -1.6px;
+        color: #FFFFFF; }
+      .product-instantiation .label-container .order-number-label .label__right {
+        width: 9px;
+        height: 100%;
+        background-color: #E2B64D; }
+  .product-instantiation .reference-po-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: 104px; }
+  .product-instantiation .add-product-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 92px;
+    box-sizing: border-box;
+    padding: 0 14px; }
+    .product-instantiation .add-product-container .products-label {
+      width: 94px;
+      height: 28px;
+      font-family: Arial;
+      font-size: 25px;
+      letter-spacing: -1.3px;
+      color: #51433a; }
 
 /*# sourceMappingURL=index.css.map */
