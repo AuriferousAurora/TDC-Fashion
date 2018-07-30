@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProductInstantiation from './product-instantiation/product-instantiation';
+import ProductCreator from './product-creator/product-creator';
 
 class DashboardOrderManager extends Component {
   render() {
@@ -18,6 +19,8 @@ class DashboardOrderManager extends Component {
         </div>
         <div className='order-dashboard__body'>
           <ProductInstantiation/>
+          <ProductCreator/>
+          <ProductCreator/>
         </div>
       </div>
     );
