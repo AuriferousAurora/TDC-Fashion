@@ -1,74 +1,314 @@
-/*
-Error: File to import not found or unreadable: order-manager/order-manager.
-        on line 4 of components/_component-directory.sass
-        from line 6 of index.sass
+body {
+  margin: 0;
+  background: #FFFFFF; }
 
-1: // =================== //
-2: // Main Sass Directory //
-3: // =================== //
-4: 
-5: @import 'abstracts/abstract-directory'
-6: @import 'components/component-directory'
-7: @import 'pages/page-directory'
+#root {
+  width: 100vw;
+  height: 100vh; }
 
-Backtrace:
-components/_component-directory.sass:4
-index.sass:6
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:44:in `import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:314:in `visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `block in with_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:88:in `with_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:162:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:161:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Library/Ruby/Gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: File to import not found or unreadable: order-manager/order-manager.\A         on line 4 of components/_component-directory.sass\A         from line 6 of index.sass\A \A 1: // =================== //\A 2: // Main Sass Directory //\A 3: // =================== //\A 4: \A 5: @import 'abstracts/abstract-directory'\A 6: @import 'components/component-directory'\A 7: @import 'pages/page-directory'"; }
+.button {
+  border: none;
+  border-radius: 0.125em;
+  width: 189px;
+  height: 46px;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: -0.8px; }
+
+.header {
+  display: flex; }
+
+.header--order-manager {
+  box-sizing: border-box;
+  padding: 0 2em;
+  width: 90%;
+  height: 8%;
+  margin-left: 10%;
+  background: #F7F7F7;
+  border-bottom: 1px solid black; }
+  .header--order-manager .header__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%; }
+  .header--order-manager .header__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+    height: 100%; }
+    .header--order-manager .header__right button {
+      padding: 2em;
+      width: 12em;
+      background: #E2B64D; }
+    .header--order-manager .header__right .button--settings {
+      margin-right: 2em; }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  z-index: 8500;
+  overflow-x: hidden;
+  height: 100%; }
+
+.sidebar--order-manager {
+  width: 10%;
+  background: #746F76;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5); }
+
+.sidebar__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%; }
+
+.sidebar__icon--dashboard {
+  background: #E2B64D; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 3em;
+  margin: 15% 10%; }
+  .logo .logo__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    background: #363636;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 2em; }
+  .logo .logo__right {
+    background: #E2B64D;
+    width: 5%;
+    height: 100%; }
+
+.product-creator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
+  margin-top: 19px;
+  padding: 30px 17px;
+  width: 100%;
+  height: 428px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background: #FFFFFF; }
+  .product-creator .product-creator__number-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 32%; }
+    .product-creator .product-creator__number-label span {
+      font-family: Arial;
+      font-size: 25px;
+      letter-spacing: -1.3px;
+      color: #51433a; }
+    .product-creator .product-creator__number-label .placeholder-input-div {
+      width: 100%;
+      height: 70%;
+      background: #F7F7F7; }
+  .product-creator .add-feature {
+    margin: 20px 0;
+    color: #8acc41;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.5; }
+  .product-creator .add-sketches {
+    box-sizing: border-box;
+    margin-top: 10px;
+    background: #F7F7F7; }
+    .product-creator .add-sketches button.add-sketch {
+      border: none;
+      border-radius: 0.125em;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+      background-color: #363636;
+      width: 151px;
+      height: 33px;
+      color: #FFFFFF;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: -0.6px; }
+  .product-creator .add-tech-sheets {
+    box-sizing: border-box;
+    margin-top: 10px;
+    background: #F7F7F7; }
+    .product-creator .add-tech-sheets button.add-tech-sheet {
+      border: none;
+      border-radius: 0.125em;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+      background-color: #363636;
+      width: 151px;
+      height: 33px;
+      color: #FFFFFF;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: -0.6px; }
+
+.bookmark {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -75px;
+  left: 0;
+  padding-top: 3px;
+  width: 30px;
+  height: 64px;
+  background-color: #E2B64D;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -1px; }
+
+.product-details {
+  width: 100%;
+  height: 30%;
+  background: #F7F7F7; }
+
+.product-instantiation {
+  width: 100%;
+  height: 278px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #FFFFFF; }
+  .product-instantiation .label-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 82px; }
+    .product-instantiation .label-container .order-number-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 241px;
+      height: 45px;
+      background-color: #51433a; }
+      .product-instantiation .label-container .order-number-label .label__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 232px;
+        height: 100%; }
+      .product-instantiation .label-container .order-number-label .order-number {
+        width: 161px;
+        height: 33px;
+        font-family: Arial;
+        font-size: 30px;
+        letter-spacing: -1.6px;
+        color: #FFFFFF; }
+      .product-instantiation .label-container .order-number-label .label__right {
+        width: 9px;
+        height: 100%;
+        background-color: #E2B64D; }
+  .product-instantiation .reference-po-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    height: 104px; }
+  .product-instantiation .add-product-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 92px;
+    box-sizing: border-box;
+    padding: 0 14px; }
+    .product-instantiation .add-product-container .products-label {
+      width: 94px;
+      height: 28px;
+      font-family: Arial;
+      font-size: 25px;
+      letter-spacing: -1.3px;
+      color: #51433a; }
+    .product-instantiation .add-product-container .add-product {
+      border: none;
+      border-radius: 0.125em;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+      background-color: #E2B64D;
+      width: 169px;
+      height: 33px;
+      color: #FFFFFF;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: -0.6px; }
+
+.order-dashboard {
+  box-sizing: border-box;
+  margin-left: 10%;
+  padding-right: 2.875em;
+  padding-bottom: 5%;
+  padding-left: 21px;
+  width: 90%;
+  height: auto;
+  min-height: 100vh;
+  background: #F7F7F7; }
+
+.order-dashboard__top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  box-sizing: border-box; }
+  .order-dashboard__top-bar .top-bar__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 20%;
+    height: 100%;
+    padding-top: 15px; }
+    .order-dashboard__top-bar .top-bar__left .top-bar__back-order {
+      margin: 0;
+      width: 100px;
+      height: 20px;
+      font-family: Arial;
+      font-size: 18px;
+      letter-spacing: -1px;
+      color: #51433a; }
+    .order-dashboard__top-bar .top-bar__left .top-bar__new-order-title {
+      margin: 0;
+      height: 39px;
+      font-family: Arial;
+      font-size: 35px;
+      font-weight: bold;
+      letter-spacing: -1.9px;
+      color: #51433a; }
+  .order-dashboard__top-bar .top-bar__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    height: 100%; }
+    .order-dashboard__top-bar .top-bar__right .top-bar__button--cancel {
+      background: #E2B64D;
+      margin-right: 9px; }
+    .order-dashboard__top-bar .top-bar__right .top-bar__button--save {
+      background: #363636;
+      margin-right: 9px; }
+    .order-dashboard__top-bar .top-bar__right .top-bar__button--req-quote {
+      background: #9c6e00;
+      width: 210px; }
+
+.order-dashboard__body {
+  padding-top: 20px;
+  padding-bottom: 30px; }
+
+/*# sourceMappingURL=index.css.map */
