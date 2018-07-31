@@ -20,7 +20,6 @@ class DashboardOrderManager extends Component {
         <div className='order-dashboard__body'>
           <ProductInstantiation/>
           <ProductCreator/>
-          <ProductCreator/>
         </div>
       </div>
     );

@@ -173,11 +173,85 @@ body {
   padding-bottom: 30px; }
 
 .product-creator {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-sizing: border-box;
   margin-top: 19px;
+  padding: 30px 17px;
   width: 100%;
   height: 428px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background: #FFFFFF; }
+  .product-creator .product-creator__number-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 32%; }
+    .product-creator .product-creator__number-label span {
+      font-family: Arial;
+      font-size: 25px;
+      letter-spacing: -1.3px;
+      color: #51433a; }
+    .product-creator .product-creator__number-label .placeholder-input-div {
+      width: 100%;
+      height: 70%;
+      background: #F7F7F7; }
+  .product-creator .add-feature {
+    margin: 20px 0;
+    color: #8acc41;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.5; }
+  .product-creator .add-sketches {
+    box-sizing: border-box;
+    margin-top: 10px;
+    background: #F7F7F7; }
+    .product-creator .add-sketches button.add-sketch {
+      border: none;
+      border-radius: 0.125em;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+      background-color: #363636;
+      width: 151px;
+      height: 33px;
+      color: #FFFFFF;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: -0.6px; }
+  .product-creator .add-tech-sheets {
+    box-sizing: border-box;
+    margin-top: 10px;
+    background: #F7F7F7; }
+    .product-creator .add-tech-sheets button.add-tech-sheet {
+      border: none;
+      border-radius: 0.125em;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+      background-color: #363636;
+      width: 151px;
+      height: 33px;
+      color: #FFFFFF;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: -0.6px; }
+
+.bookmark {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -75px;
+  left: 0;
+  padding-top: 3px;
+  width: 30px;
+  height: 64px;
+  background-color: #E2B64D;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -1px; }
 
 .product-instantiation {
   width: 100%;
@@ -249,5 +323,10 @@ body {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 16px;
       letter-spacing: -0.6px; }
+
+.size-color-quantity {
+  width: 100%;
+  height: 30%;
+  background: #F7F7F7; }
 
 /*# sourceMappingURL=index.css.map */
