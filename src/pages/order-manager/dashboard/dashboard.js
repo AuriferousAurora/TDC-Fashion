@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
+import ButtonBase from '../../../components/base/buttons/button';
 import ProductInstantiation from './product-instantiation/product-instantiation';
 import ProductCreator from './product-creator/product-creator';
 
 class DashboardOrderManager extends Component {
+  createMarkUp(innerHTML) {
+    return { __html: innerHTML };
+  }
+
   render() {
     return (
       <div className='order-dashboard'>
@@ -12,7 +17,9 @@ class DashboardOrderManager extends Component {
             <h1 className='top-bar__new-order-title'>New Orders</h1>
           </div>
           <div className='top-bar__right'>
-            <button className='top-bar__button--cancel'>CANCEL</button>
+            <ButtonBase 
+              className='top-bar__button--cancel'
+              innerHTML={this.createMarkUp('CANCEL')}></ButtonBase>
             <button className='top-bar__button--save'>SAVE</button>
             <button className='top-bar__button--req-quote'>REQUEST QUOTE</button>
           </div>

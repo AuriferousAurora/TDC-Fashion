@@ -8,7 +8,13 @@ body {
 
 .button {
   border: none;
-  border-radius: 0.125em; }
+  border-radius: 0.125em;
+  width: 189px;
+  height: 46px;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: -0.8px; }
 
 .header {
   display: flex; }
@@ -135,21 +141,12 @@ body {
     width: 80%;
     height: 100%; }
     .order-dashboard__top-bar .top-bar__right .top-bar__button--cancel {
-      border: none;
-      border-radius: 0.125em;
-      background-color: #E2B64D;
-      width: 189px;
-      height: 46px;
-      color: #FFFFFF;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 22px;
-      letter-spacing: -0.8px;
+      background: #E2B64D;
       margin-right: 9px; }
     .order-dashboard__top-bar .top-bar__right .top-bar__button--save {
       border: none;
       border-radius: 0.125em;
-      background-color: #363636;
-      width: 189px;
+      width: #363636;
       height: 46px;
       color: #FFFFFF;
       font-family: Arial, Helvetica, sans-serif;
@@ -159,8 +156,7 @@ body {
     .order-dashboard__top-bar .top-bar__right .top-bar__button--req-quote {
       border: none;
       border-radius: 0.125em;
-      background-color: #9c6e00;
-      width: 189px;
+      width: #9c6e00;
       height: 46px;
       color: #FFFFFF;
       font-family: Arial, Helvetica, sans-serif;
