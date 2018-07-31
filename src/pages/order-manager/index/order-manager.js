@@ -1,6 +1,6 @@
 import React, {Component, Fragment } from 'react';
 import SidebarOrderManager from '../../../components/base/sidebar/sidebar--order-manager/sidebar--order-manager';
-import DashboardOrderManager from '../dashboard/dashboard';
+import DashboardOrderManager from '../../../components/order-manager/dashboard/dashboard';
 
 class OrderManager extends Component {
   render() {

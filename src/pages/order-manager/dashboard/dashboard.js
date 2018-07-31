@@ -20,8 +20,12 @@ class DashboardOrderManager extends Component {
             <ButtonBase 
               className='top-bar__button--cancel'
               innerHTML={this.createMarkUp('CANCEL')}></ButtonBase>
-            <button className='top-bar__button--save'>SAVE</button>
-            <button className='top-bar__button--req-quote'>REQUEST QUOTE</button>
+            <ButtonBase 
+              className='top-bar__button--save'
+              innerHTML={this.createMarkUp('SAVE')}></ButtonBase>
+            <ButtonBase 
+              className='top-bar__button--req-quote'
+              innerHTML={this.createMarkUp('REQUEST QUOTE')}></ButtonBase>
           </div>
         </div>
         <div className='order-dashboard__body'>

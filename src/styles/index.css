@@ -144,24 +144,10 @@ body {
       background: #E2B64D;
       margin-right: 9px; }
     .order-dashboard__top-bar .top-bar__right .top-bar__button--save {
-      border: none;
-      border-radius: 0.125em;
-      width: #363636;
-      height: 46px;
-      color: #FFFFFF;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 22px;
-      letter-spacing: -0.8px;
+      background: #363636;
       margin-right: 9px; }
     .order-dashboard__top-bar .top-bar__right .top-bar__button--req-quote {
-      border: none;
-      border-radius: 0.125em;
-      width: #9c6e00;
-      height: 46px;
-      color: #FFFFFF;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 22px;
-      letter-spacing: -0.8px;
+      background: #9c6e00;
       width: 210px; }
 
 .order-dashboard__body {
