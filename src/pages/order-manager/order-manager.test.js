@@ -1,4 +1,6 @@
 import React, {Component, Fragment } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import Sidebar from '../../components/base/sidebar/sidebar.test';
 import DashboardOrderManager from '../../components/order-manager/dashboard/dashboard.test';
 
@@ -8,21 +10,30 @@ import NewOrderIcon from './icons/IconNewOrder.png';
 import PaymentIcon from './icons/IconPaymentsDisable.png';
 import ShippingIcon from './icons/IconShippingDisable.png';
 import NotificationIcon from './icons/IconNotificationsDisable.png';
+import EmptyView from '../../components/order-manager/dashboard/empty-view/empty-view.test';
+
+const Dashboard = () => (
+  <DashboardOrderManager/>
+);
 
 class OrderManager extends Component {
   render() {
     return (
-      <Fragment>
-        <Sidebar className={'sidebar--order-manager'}>
-          <Logo/>
-          <div className='sidebar__icon sidebar__icon--dashboard'><img src={DashboardIcon} alt='dashboard'/></div>
-          <div className='sidebar__icon sidebar__icon--new-order'><img src={NewOrderIcon} alt='new-order'/></div>   
-          <div className='sidebar__icon sidebar__icon--payments'><img src={PaymentIcon} alt='payment'/></div>
-          <div className='sidebar__icon sidebar__icon--shipping'><img src={ShippingIcon} alt='shipping'/></div>
-          <div className='sidebar__icon sidebar__icon--notifications'><img src={NotificationIcon} alt='notifications'/></div>
-        </Sidebar>
-        <DashboardOrderManager/>
-      </Fragment>
+      <Router>
+        <Fragment>
+          <Sidebar className={'sidebar--order-manager'}>
+            <Logo/>
+            <div className='sidebar__icon sidebar__icon--dashboard'><img src={DashboardIcon} alt='dashboard'/></div>
+            <div className='sidebar__icon sidebar__icon--new-order'><img src={NewOrderIcon} alt='new-order'/></div>   
+            <div className='sidebar__icon sidebar__icon--payments'><img src={PaymentIcon} alt='payment'/></div>
+            <div className='sidebar__icon sidebar__icon--shipping'><img src={ShippingIcon} alt='shipping'/></div>
+            <div className='sidebar__icon sidebar__icon--notifications'><img src={NotificationIcon} alt='notifications'/></div>
+          </Sidebar>
+          <Route exact={true} path='/' render={() => <EmptyView/>}/>
+          {/* If it becomes necessary to pass props to a component, use React Router's render method instead of component method. */}
+          <Route path='/om/d/new-product' component={Dashboard}/>
+        </Fragment>
+      </Router>
     );
   }
 }

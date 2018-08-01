@@ -48,7 +48,7 @@ class DashboardOrderManager extends Component {
         </div>
       </div>
     );
-  }
+  }  
 }
 
 export default DashboardOrderManager;

@@ -9,6 +9,7 @@ body {
 .button {
   border: none;
   border-radius: 0.125em;
+  background: #E2B64D;
   width: 189px;
   height: 46px;
   color: #FFFFFF;
@@ -110,6 +111,36 @@ body {
 .order-dashboard__body {
   padding-top: 20px;
   padding-bottom: 30px; }
+
+.empty-view__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12.5em;
+  height: auto;
+  position: relative;
+  top: 30%;
+  left: 50%; }
+  .empty-view__container span.empty-view__text {
+    width: 16.938em;
+    font-family: Arial;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: -2.1px;
+    text-align: center;
+    color: #BDBDBD; }
+  .empty-view__container button.empty-view__button {
+    border: none;
+    border-radius: 0.125em;
+    background: #E2B64D;
+    width: 12.556em;
+    height: 46px;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    letter-spacing: -0.8px;
+    margin-top: 1.5em; }
 
 .product-creator {
   display: flex;
