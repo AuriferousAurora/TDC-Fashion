@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ComponsedTextfield from '../../material-text/textfield';
+// import ComponsedTextfield from '../../material-text/textfield';
 
 class ProductInstantiation extends Component {
   render() {
@@ -14,7 +14,7 @@ class ProductInstantiation extends Component {
           </div>
         </div>
         <div className='reference-po-container'>
-          <ComponsedTextfield underlineFocusStyle={styles.underlineStyle}/>
+          {/* <ComponsedTextfield underlineFocusStyle={styles.underlineStyle}/> */}
         </div>
         <div className='add-product-container'>
           <span className='products-label'>Products:</span>
