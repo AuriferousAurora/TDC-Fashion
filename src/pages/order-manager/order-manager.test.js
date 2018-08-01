@@ -30,7 +30,7 @@ class OrderManager extends Component {
             <div className='sidebar__icon sidebar__icon--notifications'><img src={NotificationIcon} alt='notifications'/></div>
           </Sidebar>
           <Route exact={true} path='/' render={() => <EmptyView/>}/>
-          {/* If it becomes necessary to pass props to a component, use React Router's render method instead of component method. */}
+          {/* If it becomes necessary to pass props to a component, use React Router's render method instead of component method. Check out this link if stuck: https://tylermcginnis.com/react-router-pass-props-to-components/*/}
           <Route path='/om/d/new-product' component={Dashboard}/>
         </Fragment>
       </Router>
