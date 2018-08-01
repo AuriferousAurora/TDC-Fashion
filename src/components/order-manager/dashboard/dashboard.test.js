@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import ButtonBase from '../../base/buttons/button';
+import ButtonBase from '../../base/buttons/button.test';
 import ProductInstantiation from './product-instantiation/product-instantiation';
 import ProductCreator from './product-creator/product-creator';
 
@@ -13,14 +13,11 @@ class TopBarRight extends Component {
     return (
       <div className='top-bar__right'>
         <ButtonBase 
-          className='top-bar__button--cancel'
-          innerHTML={this.createMarkUp('CANCEL')}></ButtonBase>
+          className='top-bar__button--cancel'>{<span>CANCEL</span>}</ButtonBase>
         <ButtonBase 
-          className='top-bar__button--save'
-          innerHTML={this.createMarkUp('SAVE')}></ButtonBase>
+          className='top-bar__button--save'>{<span>CANCEL</span>}</ButtonBase>
         <ButtonBase 
-          className='top-bar__button--req-quote'
-          innerHTML={this.createMarkUp('REQUEST QUOTE')}></ButtonBase>
+          className='top-bar__button--req-quote'>{<span>CANCEL</span>}</ButtonBase>
       </div>
     );
   }

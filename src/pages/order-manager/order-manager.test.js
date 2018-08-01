@@ -1,6 +1,6 @@
 import React, {Component, Fragment } from 'react';
 import Sidebar from '../../components/base/sidebar/sidebar.test';
-import DashboardOrderManager from '../../components/order-manager/dashboard/dashboard';
+import DashboardOrderManager from '../../components/order-manager/dashboard/dashboard.test';
 
 import Logo from '../../components/base/logo/logo.js';
 import DashboardIcon from './icons/IconDashboardEnable.png';
