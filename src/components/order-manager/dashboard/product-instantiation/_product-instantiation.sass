@@ -4,7 +4,7 @@
   box-shadow: $standard-box-shadow
   background-color: $base-white
   .label-container
-    +custom-flex(row, flex-start, center, 100%, 82px)
+    +custom-flex(row, flex-start, center, 100%, 102px)
     .order-number-label
       +rc-flex(241px, 45px)
       background-color: #51433a
@@ -22,7 +22,10 @@
         height: 100%
         background-color: $primary-color
   .reference-po-container
-    +custom-flex(row, flex-start, flex-end, 100%, 104px)
+    +custom-flex(row, flex-start, flex-start, 100%, 84px)
+    padding-left: 10px
+    #test-input
+      width: 100%
   .add-product-container
     +custom-flex(row, space-between, flex-start, 100%, 92px)
     box-sizing: border-box

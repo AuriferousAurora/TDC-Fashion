@@ -208,7 +208,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    height: 82px; }
+    height: 102px; }
     .product-instantiation .label-container .order-number-label {
       display: flex;
       justify-content: center;
@@ -237,9 +237,12 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 100%;
-    height: 104px; }
+    height: 84px;
+    padding-left: 10px; }
+    .product-instantiation .reference-po-container #test-input {
+      width: 100%; }
   .product-instantiation .add-product-container {
     display: flex;
     flex-direction: row;
