@@ -17,6 +17,19 @@ body {
   font-size: 22px;
   letter-spacing: -0.8px; }
 
+.link-button {
+  border-radius: 0.125em;
+  background: #E2B64D;
+  width: auto;
+  /* Refactor this into appropriate 'em' value. */
+  height: 46px;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  /* Same deal here. */
+  font-size: 22px;
+  letter-spacing: -0.8px; }
+
 .header {
   display: flex; }
 
@@ -301,6 +314,8 @@ body {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 16px;
       letter-spacing: -0.6px; }
+    .product-instantiation .add-product-container .add-product__link-button {
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
 
 .sidebar--order-manager {
   width: 10%;

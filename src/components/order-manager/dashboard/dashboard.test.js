@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ButtonBase from '../../base/buttons/button.test';
-import ProductInstantiation from './product-instantiation/product-instantiation';
+import ProductInstantiation from './product-instantiation/product-instantiation.test';
 import ProductCreator from './product-creator/product-creator';
 
 

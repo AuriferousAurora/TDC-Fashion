@@ -38,6 +38,20 @@
   font-size: 22px
   letter-spacing: -0.8px
 
+=link-button($w: auto, $bg-color: $primary-color)
+  border-radius: $button-border-radius
+  background: $bg-color
+  width: $w
+  /* Refactor this into appropriate 'em' value. */
+  height: 46px
+  text-decoration: none
+  color: $base-white
+  font-family: Arial, Helvetica, sans-serif
+  /* Same deal here. */
+  font-size: 22px
+  letter-spacing: -0.8px
+
+
 =small-button($w, $bg-color)
   border: none
   border-radius: $button-border-radius

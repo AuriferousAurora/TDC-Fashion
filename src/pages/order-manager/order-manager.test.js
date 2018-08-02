@@ -1,5 +1,5 @@
 import React, {Component, Fragment } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import Sidebar from '../../components/base/sidebar/sidebar.test';
 import DashboardOrderManager from '../../components/order-manager/dashboard/dashboard.test';
@@ -19,7 +19,6 @@ const Dashboard = () => (
 class OrderManager extends Component {
   render() {
     return (
-      <Router>
         <Fragment>
           <Sidebar className={'sidebar--order-manager'}>
             <Logo/>
@@ -33,7 +32,6 @@ class OrderManager extends Component {
           {/* If it becomes necessary to pass props to a component, use React Router's render method instead of component method. Check out this link if stuck: https://tylermcginnis.com/react-router-pass-props-to-components/*/}
           <Route path='/om/d/new-product' component={Dashboard}/>
         </Fragment>
-      </Router>
     );
   }
 }
