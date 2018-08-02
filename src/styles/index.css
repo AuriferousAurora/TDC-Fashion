@@ -332,4 +332,84 @@ body {
     .product-instantiation .add-product-container .add-product__link-button {
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
 
+.ref-po__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 84px;
+  box-sizing: border-box;
+  padding-left: 1.5em; }
+  .ref-po__form .ref-po__input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    position: relative; }
+    .ref-po__form .ref-po__input input {
+      box-sizing: border-box;
+      font-size: 18px;
+      padding: 10px 10px 10px 5px;
+      display: block;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #757575; }
+    .ref-po__form .ref-po__input input:focus {
+      outline: none; }
+    .ref-po__form .ref-po__input label {
+      position: absolute;
+      left: 5px;
+      top: 1.8em;
+      color: #999;
+      font-size: 1.2em;
+      pointer-events: none;
+      transition: 0.2s ease all; }
+    .ref-po__form .ref-po__input input:focus ~ label, .ref-po__form .ref-po__input input:valid ~ label {
+      top: 0.3em;
+      font-size: 14px;
+      color: #26A69A; }
+    .ref-po__form .ref-po__input .bar {
+      position: relative;
+      display: block;
+      width: 100%; }
+    .ref-po__form .ref-po__input .bar::before, .ref-po__form .ref-po__input .bar::after {
+      content: "";
+      position: absolute;
+      bottom: 1px;
+      width: 0;
+      height: 2px;
+      background: #26A69A;
+      transition: 0.2s ease all; }
+    .ref-po__form .ref-po__input .bar::before {
+      left: 50%; }
+    .ref-po__form .ref-po__input .bar::after {
+      right: 50%; }
+    .ref-po__form .ref-po__input input:focus ~ .bar::before, .ref-po__form .ref-po__input input:focus ~ .bar::after {
+      width: 50%; }
+    .ref-po__form .ref-po__input .highlight {
+      position: absolute;
+      top: 25%;
+      left: 0;
+      width: 150px;
+      height: 60%;
+      pointer-events: none;
+      opacity: 0.5; }
+    .ref-po__form .ref-po__input input:focus ~ .highlight {
+      animation: inputHighlighter 0.3s ease; }
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE; }
+  to {
+    width: 0;
+    background: transparent; } }
+  .ref-po__form .ref-po__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%; }
+
 /*# sourceMappingURL=index.css.map */

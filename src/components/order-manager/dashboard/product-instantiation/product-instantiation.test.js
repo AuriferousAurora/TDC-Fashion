@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 import LinkButton from '../../../base/buttons/link-button/link-button.test';
+import RefPOForm from '../../product-form/product-from';
 
 class ProductInstantiation extends Component {
   render() {
@@ -14,8 +15,7 @@ class ProductInstantiation extends Component {
             <div className='label__right'></div>
           </div>
         </div>
-        <div className='reference-po-container'>
-        </div>
+        <RefPOForm/>
         <div className='add-product-container'>
           <span className='products-label'>Products:</span>
           <LinkButton

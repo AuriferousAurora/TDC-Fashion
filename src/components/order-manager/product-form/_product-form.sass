@@ -1,0 +1,65 @@
+.ref-po__form
+  +custom-flex(row, flex-start, flex-start, 100%, 84px)
+  box-sizing: border-box
+  padding-left: 1.5em
+  .ref-po__input
+    +cc-flex(50%, 100%)
+    position: relative
+    input
+      box-sizing: border-box
+      font-size: 18px
+      padding: 10px 10px 10px 5px
+      display: block
+      width: 100%
+      border: none
+      border-bottom: 1px solid #757575
+    input:focus
+      outline: none
+    label
+      position: absolute
+      left: 5px
+      top: 1.8em
+      color: #999
+      font-size: 1.2em
+      pointer-events: none
+      transition: 0.2s ease all
+    input:focus ~ label, input:valid ~ label
+      top: 0.3em
+      font-size: 14px
+      color: $highlight-color
+    .bar
+      position: relative 
+      display: block
+      width: 100%
+    .bar::before, .bar::after
+      content: ''
+      position: absolute
+      bottom: 1px
+      width: 0
+      height: 2px
+      background: $highlight-color
+      transition: 0.2s ease all
+    .bar::before
+      left: 50%
+    .bar::after 
+      right: 50%
+    input:focus ~ .bar::before, input:focus ~ .bar::after
+      width: 50%
+    .highlight
+      position: absolute
+      top: 25%
+      left: 0
+      width: 150px
+      height: 60%
+      pointer-events: none
+      opacity: 0.5
+    input:focus ~ .highlight
+      animation: inputHighlighter 0.3s ease
+    @keyframes inputHighlighter
+      from 
+        background: #5264AE
+      to 
+        width: 0 
+        background: transparent
+  .ref-po__submit
+    +rc-flex(50%, 100%)

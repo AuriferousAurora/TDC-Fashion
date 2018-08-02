@@ -14,7 +14,7 @@ class ProductInstantiation extends Component {
             <div className='label__right'></div>
           </div>
         </div>
-        <div className='reference-po-container'>
+        <div className='reference-po-container'>     
         </div>
         <div className='add-product-container'>
           <span className='products-label'>Products:</span>
