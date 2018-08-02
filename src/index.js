@@ -9,9 +9,9 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 import './styles/index.css';
 
-// This section declares imports for main pages within the application (it may need to be restuctured such that the landing page is the first thing that is displayed and everything else is rendered based on the users input via the links heretobe established by React Router).
+// This section declares imports for main pages within the application (it may need to be restuctured such that the landing page is the first thing that is displayed and everything else is rendered based on the users input via the links established by React Router).
 
-import OrderManager from './pages/order-manager/order-manager.test';
+import OrderManager from './pages/order-manager/order-manager';
 
 // This section declares imports for typefaces. Each typeface is included via NPM and listed inside of the 'package.json' file within the 'dependencies' object.
 

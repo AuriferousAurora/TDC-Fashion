@@ -40,6 +40,21 @@ body {
   overflow-x: hidden;
   height: 100%; }
 
+.sidebar--order-manager {
+  width: 10%;
+  background: #746F76;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5); }
+
+.sidebar__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%; }
+
+.sidebar__icon--dashboard {
+  background: #E2B64D; }
+
 .logo {
   display: flex;
   justify-content: center;
@@ -316,20 +331,5 @@ body {
       letter-spacing: -0.6px; }
     .product-instantiation .add-product-container .add-product__link-button {
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
-
-.sidebar--order-manager {
-  width: 10%;
-  background: #746F76;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5); }
-
-.sidebar__icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 10%; }
-
-.sidebar__icon--dashboard {
-  background: #E2B64D; }
 
 /*# sourceMappingURL=index.css.map */

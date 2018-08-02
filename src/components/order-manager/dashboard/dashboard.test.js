@@ -3,8 +3,8 @@ import ButtonBase from '../../base/buttons/button.test';
 import ProductInstantiation from './product-instantiation/product-instantiation.test';
 import ProductCreator from './product-creator/product-creator';
 
-import { Route } from 'react-router-dom';
 
+import { Route } from 'react-router-dom';
 
 class TopBarRight extends Component {
   createMarkUp(innerHTML) {
