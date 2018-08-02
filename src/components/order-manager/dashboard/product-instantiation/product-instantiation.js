@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-// import ComponsedTextfield from '../../material-text/textfield';
+
+import LinkButton from '../../../base/buttons/link-button/link-button.test';
 
 class ProductInstantiation extends Component {
   render() {
@@ -14,11 +15,14 @@ class ProductInstantiation extends Component {
           </div>
         </div>
         <div className='reference-po-container'>
-          {/* <ComponsedTextfield underlineFocusStyle={styles.underlineStyle}/> */}
         </div>
         <div className='add-product-container'>
           <span className='products-label'>Products:</span>
-          <button className='add-product'>Add Product</button>
+          <LinkButton
+            className='add-product__link-button'
+            destination='/dashboard/product-details'>
+            <span>Add Product</span>
+          </LinkButton>
         </div>
       </div>
     );
