@@ -11,7 +11,7 @@ class EmptyView extends Component {
         <img className='empty-view__icon' src={IconEmptyView} alt='Icon Empty View'/>
         <span className='empty-view__text'>Create a New Order</span>
         <ButtonBase className='empty-view__button'>
-          <Link to='/om/d/new-product'>New Order</Link>
+          <Link to='/dashboard'>New Order</Link>
         </ButtonBase>
       </div>
     );

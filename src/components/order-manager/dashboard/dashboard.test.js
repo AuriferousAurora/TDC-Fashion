@@ -3,6 +3,8 @@ import ButtonBase from '../../base/buttons/button.test';
 import ProductInstantiation from './product-instantiation/product-instantiation.test';
 import ProductCreator from './product-creator/product-creator';
 
+import { Route } from 'react-router-dom';
+
 
 class TopBarRight extends Component {
   createMarkUp(innerHTML) {
@@ -44,7 +46,7 @@ class DashboardOrderManager extends Component {
         </div>
         <div className='order-dashboard__body'>
           <ProductInstantiation/>
-          <ProductCreator/>
+          <Route path='/dashboard/product-details' render={() => <ProductCreator/>}/>
         </div>
       </div>
     );

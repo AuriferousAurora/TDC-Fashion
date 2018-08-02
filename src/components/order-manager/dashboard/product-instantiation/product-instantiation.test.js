@@ -20,7 +20,7 @@ class ProductInstantiation extends Component {
           <span className='products-label'>Products:</span>
           <LinkButton
             className='add-product__link-button'
-            destination='om/d/product-details'>
+            destination='/dashboard/product-details'>
             <span>Add Product</span>
           </LinkButton>
         </div>
