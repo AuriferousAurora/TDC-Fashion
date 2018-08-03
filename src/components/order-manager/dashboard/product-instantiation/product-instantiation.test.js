@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import LinkButton from '../../../base/buttons/link-button/link-button.test';
-import RefPOForm from '../../product-form/product-from';
+import RefPoInput from '../../product-form/ref-po-input';
 
 class ProductInstantiation extends Component {
   render() {
@@ -15,7 +15,7 @@ class ProductInstantiation extends Component {
             <div className='label__right'></div>
           </div>
         </div>
-        <RefPOForm/>
+        <RefPoInput valueProp={this.props.refPo} onChangeProp={() => this.props.handleRefPoChangeProp()} />
         <div className='add-product-container'>
           <span className='products-label'>Products:</span>
           <LinkButton

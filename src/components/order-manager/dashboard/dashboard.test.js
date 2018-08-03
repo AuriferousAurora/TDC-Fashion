@@ -3,7 +3,6 @@ import ButtonBase from '../../base/buttons/button.test';
 import ProductInstantiation from './product-instantiation/product-instantiation.test';
 import ProductCreator from './product-creator/product-creator';
 
-
 import { Route } from 'react-router-dom';
 
 class TopBarRight extends Component {
@@ -37,18 +36,40 @@ class TopBarLeft extends Component {
 }
 
 class DashboardOrderManager extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { refPo: '' };
+
+    this.handleRefPoChange = this.handleRefPoChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleRefPoChange(e) {
+    this.setState({ refPo: e.target.value });
+    console.log(this.state.refPo);
+  }
+
+  handleSubmit(e) {
+    alert('The Reference P.O. that you managed to get into the state and submit is ' + this.state.refPo);
+    e.preventDefault();
+  }
+
   render() {
     return (
-      <div className='order-dashboard'>
-        <div className='order-dashboard__top-bar'>
-          <TopBarLeft/>
-          <TopBarRight/>
+      <form id='product-form' 
+        className='form product-form'
+        onSubmit={this.handleSubmit}>
+        <div className='order-dashboard'>
+          <div className='order-dashboard__top-bar'>
+            <TopBarLeft/>
+            <TopBarRight/>
+          </div>
+          <div className='order-dashboard__body'>
+            <ProductInstantiation refPo={this.state.refPo} handleRefPoChangeProp={() => this.handleRefPoChange}/>
+            <Route path='/dashboard/product-details' render={() => <ProductCreator/>}/>
+          </div>
         </div>
-        <div className='order-dashboard__body'>
-          <ProductInstantiation/>
-          <Route path='/dashboard/product-details' render={() => <ProductCreator/>}/>
-        </div>
-      </div>
+      </form>
     );
   }  
 }
