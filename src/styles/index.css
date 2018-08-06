@@ -50,72 +50,6 @@ body {
     width: 50%;
     height: 100%; }
 
-.product-form__input {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 30%;
-  box-sizing: border-box;
-  position: relative;
-  padding: 0 2%; }
-  .product-form__input input {
-    box-sizing: border-box;
-    font-size: 18px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #757575; }
-  .product-form__input input:focus {
-    outline: none; }
-  .product-form__input label {
-    position: absolute;
-    left: 1.5em;
-    top: 1.8em;
-    color: #999;
-    font-size: 1.2em;
-    pointer-events: none;
-    transition: 0.2s ease all; }
-  .product-form__input input:focus ~ label, .product-form__input input:valid ~ label {
-    top: 0.3em;
-    font-size: 14px;
-    color: #26A69A; }
-  .product-form__input .input__bar {
-    position: relative;
-    display: block;
-    width: 100%; }
-  .product-form__input .input__bar::before, .product-form__input .input__bar::after {
-    content: "";
-    position: absolute;
-    bottom: 1px;
-    width: 0;
-    height: 2px;
-    background: #26A69A;
-    transition: 0.2s ease all; }
-  .product-form__input .input__bar::before {
-    left: 50%; }
-  .product-form__input .input__bar::after {
-    right: 50%; }
-  .product-form__input input:focus ~ .bar::before, .product-form__input input:focus ~ .bar::after {
-    width: 50%; }
-  .product-form__input .input__highlight {
-    position: absolute;
-    top: 25%;
-    left: 0;
-    width: 150px;
-    height: 60%;
-    pointer-events: none;
-    opacity: 0.5; }
-  .product-form__input input:focus ~ .input__highlight {
-    animation: inputHighlighter 0.3s ease; }
-@keyframes inputHighlighter {
-  from {
-    background: #5264AE; }
-  to {
-    width: 0;
-    background: transparent; } }
 .header {
   display: flex; }
 
@@ -327,6 +261,72 @@ body {
   font-weight: bold;
   letter-spacing: -1px; }
 
+.product-form__description-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 2%; }
+  .product-form__description-input input {
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575; }
+  .product-form__description-input input:focus {
+    outline: none; }
+  .product-form__description-input label {
+    position: absolute;
+    left: 1.5em;
+    top: 1.8em;
+    color: #999;
+    font-size: 1.2em;
+    pointer-events: none;
+    transition: 0.2s ease all; }
+  .product-form__description-input input:focus ~ label, .product-form__description-input input:valid ~ label {
+    top: 0.3em;
+    font-size: 14px;
+    color: #26A69A; }
+  .product-form__description-input .input__bar {
+    position: relative;
+    display: block;
+    width: 100%; }
+  .product-form__description-input .input__bar::before, .product-form__description-input .input__bar::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    width: 0;
+    height: 2px;
+    background: #26A69A;
+    transition: 0.2s ease all; }
+  .product-form__description-input .input__bar::before {
+    left: 50%; }
+  .product-form__description-input .input__bar::after {
+    right: 50%; }
+  .product-form__description-input input:focus ~ .bar::before, .product-form__description-input input:focus ~ .bar::after {
+    width: 50%; }
+  .product-form__description-input .input__highlight {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 150px;
+    height: 60%;
+    pointer-events: none;
+    opacity: 0.5; }
+  .product-form__description-input input:focus ~ .input__highlight {
+    animation: inputHighlighter 0.3s ease; }
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE; }
+  to {
+    width: 0;
+    background: transparent; } }
 .product-details {
   width: 100%;
   height: 30%;
@@ -407,5 +407,72 @@ body {
       letter-spacing: -0.6px; }
     .product-instantiation .add-product-container .add-product__link-button {
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
+
+.product-form__ref-po-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 2%; }
+  .product-form__ref-po-input input {
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575; }
+  .product-form__ref-po-input input:focus {
+    outline: none; }
+  .product-form__ref-po-input label {
+    position: absolute;
+    left: 1.5em;
+    top: 1.8em;
+    color: #999;
+    font-size: 1.2em;
+    pointer-events: none;
+    transition: 0.2s ease all; }
+  .product-form__ref-po-input input:focus ~ label, .product-form__ref-po-input input:valid ~ label {
+    top: 0.3em;
+    font-size: 14px;
+    color: #26A69A; }
+  .product-form__ref-po-input .input__bar {
+    position: relative;
+    display: block;
+    width: 100%; }
+  .product-form__ref-po-input .input__bar::before, .product-form__ref-po-input .input__bar::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    width: 0;
+    height: 2px;
+    background: #26A69A;
+    transition: 0.2s ease all; }
+  .product-form__ref-po-input .input__bar::before {
+    left: 50%; }
+  .product-form__ref-po-input .input__bar::after {
+    right: 50%; }
+  .product-form__ref-po-input input:focus ~ .bar::before, .product-form__ref-po-input input:focus ~ .bar::after {
+    width: 50%; }
+  .product-form__ref-po-input .input__highlight {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 150px;
+    height: 60%;
+    pointer-events: none;
+    opacity: 0.5; }
+  .product-form__ref-po-input input:focus ~ .input__highlight {
+    animation: inputHighlighter 0.3s ease; }
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE; }
+  to {
+    width: 0;
+    background: transparent; } }
 
 /*# sourceMappingURL=index.css.map */

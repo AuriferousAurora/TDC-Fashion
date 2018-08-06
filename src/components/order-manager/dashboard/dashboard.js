@@ -35,15 +35,24 @@ class TopBarLeft extends Component {
 class DashboardOrderManager extends Component {
   constructor(props) {
     super(props);
-    this.state = { refPo: '' };
+    this.state = { 
+      refPo: '',
+      description: ''
+    };
 
     this.handleRefPoChange = this.handleRefPoChange.bind(this);
+    this.handleDescriptionChange = this.handleDescriptionChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleRefPoChange(e) {
     this.setState({ refPo: e.target.value });
     console.log(this.state.refPo);
+  }
+
+  handleDescriptionChange(e) {
+    this.setState({ description: e.target.value });
+    console.log(this.state.description);
   }
 
   handleSubmit(e) {
@@ -63,7 +72,7 @@ class DashboardOrderManager extends Component {
           </div>
           <div className='order-dashboard__body'>
             <ProductInstantiation refPo={this.state.refPo} handleRefPoChange={this.handleRefPoChange}/>
-            <Route path='/dashboard/product-details' render={() => <ProductCreator/>}/>
+            <Route path='/dashboard/product-details' render={() => <ProductCreator description={this.state.description} handleDescriptionChange={this.handleDescriptionChange} />}/>
           </div>
         </div>
       </form>

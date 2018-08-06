@@ -5,65 +5,6 @@
   .ref-po__submit
     +rc-flex(50%, 100%)
 
-.product-form__input
-  +cc-flex(100%, 30%)
-  box-sizing: border-box
-  position: relative
-  padding: 0 2%
-  input
-    box-sizing: border-box
-    font-size: 18px
-    padding: 10px 10px 10px 5px
-    display: block
-    width: 100%
-    border: none
-    border-bottom: 1px solid #757575
-  input:focus
-    outline: none
-  label
-    position: absolute
-    left: 1.5em
-    top: 1.8em
-    color: #999
-    font-size: 1.2em
-    pointer-events: none
-    transition: 0.2s ease all
-  input:focus ~ label, input:valid ~ label
-    top: 0.3em
-    font-size: 14px
-    color: $highlight-color
-  .input__bar
-    position: relative 
-    display: block
-    width: 100%
-  .input__bar::before, .input__bar::after
-    content: ''
-    position: absolute
-    bottom: 1px
-    width: 0
-    height: 2px
-    background: $highlight-color
-    transition: 0.2s ease all
-  .input__bar::before
-    left: 50%
-  .input__bar::after 
-    right: 50%
-  input:focus ~ .bar::before, input:focus ~ .bar::after
-    width: 50%
-  .input__highlight
-    position: absolute
-    top: 25%
-    left: 0
-    width: 150px
-    height: 60%
-    pointer-events: none
-    opacity: 0.5
-  input:focus ~ .input__highlight
-    animation: inputHighlighter 0.3s ease
-  @keyframes inputHighlighter
-    from 
-      background: #5264AE
-    to 
-      width: 0 
-      background: transparent
+
+
 

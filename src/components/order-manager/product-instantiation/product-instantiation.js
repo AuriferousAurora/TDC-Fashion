@@ -16,7 +16,7 @@ class ProductInstantiation extends Component {
           </div>
         </div>
         <SingleInput 
-          className='product-form__input product-form__ref-po-input'
+          className={'product-form__input product-form__ref-po-input animated-input'}
           name={'refPoInput'}
           inputType={'text'}
           content={this.props.refPo}

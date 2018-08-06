@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+
+import { SingleInput } from '../../base/inputs/inputs';
 import ProductDetails from '../product-details/product-details';
 
 function BookMark(props) {
@@ -12,7 +14,12 @@ class ProductCreator extends Component {
         <BookMark/>
         <div className='product-creator__number-label'>
           <span>Product No. 01</span>
-          <div className='placeholder-input-div'></div>
+          <SingleInput
+            className={'product-form__input product-form__description-input animated-input'}
+            name={'descriptionInput'}
+            inputType={'text'}
+            content={this.props.description}
+            controlFunction={this.props.handleDescriptionChange} />
         </div>
         <ProductDetails/>
         <span className='add-feature'>Add Feature</span>
