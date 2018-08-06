@@ -15,7 +15,7 @@ class ProductInstantiation extends Component {
             <div className='label__right'></div>
           </div>
         </div>
-        <RefPoInput valueProp={this.props.refPo} onChangeProp={this.props.handleRefPoChangeProp} />
+        <RefPoInput value={this.props.refPo} onChange={this.props.handleRefPoChange} />
         <div className='add-product-container'>
           <span className='products-label'>Products:</span>
           <LinkButton

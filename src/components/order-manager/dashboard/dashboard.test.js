@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import ButtonBase from '../../base/buttons/button.test';
-import ProductInstantiation from './product-instantiation/product-instantiation.test';
-import ProductCreator from './product-creator/product-creator';
+import { Button } from '../../base/buttons/buttons';
+import ProductInstantiation from '../product-instantiation/product-instantiation.test';
+import ProductCreator from '../product-creator/product-creator';
 
 import { Route } from 'react-router-dom';
 
@@ -13,12 +13,9 @@ class TopBarRight extends Component {
   render() {
     return (
       <div className='top-bar__right'>
-        <ButtonBase 
-          className='top-bar__button--cancel'>{<span>CANCEL</span>}</ButtonBase>
-        <ButtonBase 
-          className='top-bar__button--save'>{<span>CANCEL</span>}</ButtonBase>
-        <ButtonBase 
-          className='top-bar__button--req-quote'>{<span>CANCEL</span>}</ButtonBase>
+        <Button className='top-bar__button--cancel'>{<span>CANCEL</span>}</Button>
+        <Button className='top-bar__button--save'>{<span>CANCEL</span>}</Button>
+        <Button className='top-bar__button--req-quote'>{<span>CANCEL</span>}</Button>
       </div>
     );
   }
@@ -65,7 +62,7 @@ class DashboardOrderManager extends Component {
             <TopBarRight/>
           </div>
           <div className='order-dashboard__body'>
-            <ProductInstantiation refPo={this.state.refPo} handleRefPoChangeProp={this.handleRefPoChange}/>
+            <ProductInstantiation refPo={this.state.refPo} handleRefPoChange={this.handleRefPoChange}/>
             <Route path='/dashboard/product-details' render={() => <ProductCreator/>}/>
           </div>
         </div>

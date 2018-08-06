@@ -5,7 +5,7 @@
   .ref-po__submit
     +rc-flex(50%, 100%)
 
-.ref-po__input
+.product-form__input
   +cc-flex(100%, 30%)
   box-sizing: border-box
   position: relative
@@ -32,11 +32,11 @@
     top: 0.3em
     font-size: 14px
     color: $highlight-color
-  .bar
+  .input__bar
     position: relative 
     display: block
     width: 100%
-  .bar::before, .bar::after
+  .input__bar::before, .input__bar::after
     content: ''
     position: absolute
     bottom: 1px
@@ -44,13 +44,13 @@
     height: 2px
     background: $highlight-color
     transition: 0.2s ease all
-  .bar::before
+  .input__bar::before
     left: 50%
-  .bar::after 
+  .input__bar::after 
     right: 50%
   input:focus ~ .bar::before, input:focus ~ .bar::after
     width: 50%
-  .highlight
+  .input__highlight
     position: absolute
     top: 25%
     left: 0
@@ -58,7 +58,7 @@
     height: 60%
     pointer-events: none
     opacity: 0.5
-  input:focus ~ .highlight
+  input:focus ~ .input__highlight
     animation: inputHighlighter 0.3s ease
   @keyframes inputHighlighter
     from 
