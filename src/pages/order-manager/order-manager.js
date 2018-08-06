@@ -10,7 +10,7 @@ import NewOrderIcon from './icons/IconNewOrder.png';
 import PaymentIcon from './icons/IconPaymentsDisable.png';
 import ShippingIcon from './icons/IconShippingDisable.png';
 import NotificationIcon from './icons/IconNotificationsDisable.png';
-import EmptyView from '../../components/order-manager/dashboard/empty-view/empty-view';
+import EmptyView from '../../components/order-manager/empty-view/empty-view';
 
 const Dashboard = () => (
   <DashboardOrderManager/>

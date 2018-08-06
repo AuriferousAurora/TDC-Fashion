@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import IconEmptyView from './images/IconEmptyView.png';
-import { LinkButton } from '../../../base/buttons/button';
+import { LinkButton } from '../../base/buttons/button';
 
 class EmptyView extends Component {
   render() {

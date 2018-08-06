@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import { LinkButton } from '../../../base/buttons/button';
-import RefPoInput from '../../product-form/ref-po-input';
+import { LinkButton } from '../../base/buttons/button';
+import RefPoInput from '../product-form/ref-po-input';
 
 class ProductInstantiation extends Component {
   render() {
