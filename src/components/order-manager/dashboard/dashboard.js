@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Button } from '../../base/buttons/buttons';
-import ProductInstantiation from '../product-instantiation/product-instantiation.test';
+import ProductInstantiation from '../product-instantiation/product-instantiation';
 import ProductCreator from '../product-creator/product-creator';
 
 import { Route } from 'react-router-dom';

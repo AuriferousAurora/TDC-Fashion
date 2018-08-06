@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { LinkButton } from '../../base/buttons/buttons';
-import { SingleInput } from '../../base/inputs/inputs.test';
+import { SingleInput } from '../../base/inputs/inputs';
 
 class ProductInstantiation extends Component {
   render() {
