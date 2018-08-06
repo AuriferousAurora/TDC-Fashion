@@ -4,13 +4,11 @@ import { Link } from 'react-router-dom';
 class LinkButton extends Component {
   render() {
     return (
-      <button className={'link-button ' + this.props.className}>
-        <Link 
-          to={this.props.destination}
-          style={{textDecoration: none}}>
-          {this.props.children}
-        </Link>
-      </button>
+      <Link 
+        className={'link-button ' + this.props.className}
+        to={this.props.destination}>
+        {this.props.children}
+      </Link>
     );
   }
 }
