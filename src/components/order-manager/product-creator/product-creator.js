@@ -19,7 +19,8 @@ class ProductCreator extends Component {
             name={'descriptionInput'}
             inputType={'text'}
             content={this.props.description}
-            controlFunction={this.props.handleDescriptionChange} />
+            controlFunction={this.props.handleDescriptionChange}
+            label={'Description'} />
         </div>
         <ProductDetails/>
         <span className='add-feature'>Add Feature</span>

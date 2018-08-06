@@ -1,17 +1,23 @@
 .product-creator
   display: flex
   flex-direction: column
+  justify-content: flex-start
   align-items: flex-start
+  position: relative
   box-sizing: border-box
   margin-top: 19px
-  padding: 30px 17px
+  padding: 30px 2%
   width: 100%
-  height: 428px
+  height: auto
   box-shadow: $standard-box-shadow
   background: $base-white
   .product-creator__number-label
-    +custom-flex(column, space-between, flex-start, 100%, 32%)
+    +custom-flex(column, flex-end, flex-start, 100%, 8em)
+    position: relative
     span
+      position: absolute
+      top: 0
+      left: 0
       font-family: Arial
       font-size: 25px
       letter-spacing: -1.3px
@@ -43,9 +49,9 @@
   box-sizing: border-box
   display: flex
   justify-content: center
-  position: relative
-  top: -75px
-  left: 0
+  position: absolute
+  top: -3em
+  left: 1em
   padding-top: 3px
   width: 30px
   height: 64px
@@ -57,4 +63,9 @@
   letter-spacing: -1px
 
 .product-form__description-input
-  +animated-input(100%, 30%)
+  +animated-input(100%, 5em)
+  label
+    left: 0.5em
+    top: 1.6em
+  input:focus ~ label, input:valid ~ label
+    left: 0

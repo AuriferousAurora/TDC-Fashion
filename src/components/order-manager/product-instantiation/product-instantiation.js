@@ -20,7 +20,8 @@ class ProductInstantiation extends Component {
           name={'refPoInput'}
           inputType={'text'}
           content={this.props.refPo}
-          controlFunction={this.props.handleRefPoChange} />
+          controlFunction={this.props.handleRefPoChange} 
+          label={'Reference P.O'}/>
         <div className='add-product-container'>
           <span className='products-label'>Products:</span>
           <LinkButton

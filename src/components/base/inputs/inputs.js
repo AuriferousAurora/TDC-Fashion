@@ -11,7 +11,7 @@ export const SingleInput = (props) => (
       required />
     <span className='input__highlight'></span>
     <span className='input__bar'></span>
-    <label>Reference P.O.</label>
+    <label>{props.label}</label>
   </div>
 );
 
