@@ -18,11 +18,15 @@ body {
   letter-spacing: -0.8px; }
 
 .link-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   border-radius: 0.125em;
   background: #E2B64D;
+  padding: 0 1em;
   width: auto;
   /* Refactor this into appropriate 'em' value. */
-  height: 46px;
+  height: 2.1em;
   text-decoration: none;
   color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
@@ -233,6 +237,7 @@ body {
   top: 30%;
   left: 50%; }
   .empty-view__container span.empty-view__text {
+    margin-bottom: 0.2em;
     width: 16.938em;
     font-family: Arial;
     font-size: 2.5em;
@@ -240,17 +245,6 @@ body {
     letter-spacing: -2.1px;
     text-align: center;
     color: #BDBDBD; }
-  .empty-view__container button.empty-view__button {
-    border: none;
-    border-radius: 0.125em;
-    background: #E2B64D;
-    width: 12.556em;
-    height: 46px;
-    color: #FFFFFF;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    letter-spacing: -0.8px;
-    margin-top: 1.5em; }
 
 .product-creator {
   display: flex;
