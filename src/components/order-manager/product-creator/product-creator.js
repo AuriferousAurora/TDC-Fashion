@@ -22,7 +22,7 @@ class ProductCreator extends Component {
             controlFunction={this.props.handleDescriptionChange}
             label={'Description'} />
         </div>
-        <ProductDetails/>
+        <ProductDetails handleSizeSelectChange={this.props.handleSizeSelectChange} />
         <span className='add-feature'>Add Feature</span>
         <div className='add-sketches'>
           <button className='add-sketch'>Add sketches</button>

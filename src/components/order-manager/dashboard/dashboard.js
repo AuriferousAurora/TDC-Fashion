@@ -37,11 +37,13 @@ class DashboardOrderManager extends Component {
     super(props);
     this.state = { 
       refPo: '',
-      description: ''
+      description: '',
+      size: ''
     };
 
     this.handleRefPoChange = this.handleRefPoChange.bind(this);
     this.handleDescriptionChange = this.handleDescriptionChange.bind(this);
+    this.handleSizeSelectChange = this.handleSizeSelectChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -53,6 +55,11 @@ class DashboardOrderManager extends Component {
   handleDescriptionChange(e) {
     this.setState({ description: e.target.value });
     console.log(this.state.description);
+  }
+
+  handleSizeSelectChange(e) {
+    this.setState({ size: e.target.value });
+    console.log(this.state.size);
   }
 
   handleSubmit(e) {
@@ -72,7 +79,14 @@ class DashboardOrderManager extends Component {
           </div>
           <div className='order-dashboard__body'>
             <ProductInstantiation refPo={this.state.refPo} handleRefPoChange={this.handleRefPoChange}/>
-            <Route path='/dashboard/product-details' render={() => <ProductCreator description={this.state.description} handleDescriptionChange={this.handleDescriptionChange} />}/>
+            <Route 
+              path='/dashboard/product-details' 
+              render={() => 
+                <ProductCreator 
+                  description={this.state.description} 
+                  handleDescriptionChange={this.handleDescriptionChange} handleSizeSelectChange={this.handleSizeSelectChange}/>
+              }
+            />
           </div>
         </div>
       </form>
