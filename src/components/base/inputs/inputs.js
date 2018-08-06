@@ -1,6 +1,6 @@
 import React from 'react';
 
-class RefPoInput extends React.Component {
+export const RefPoInput = class RefPoInput extends React.Component {
   render() {
     return (
       <div className='ref-po__input'>      
@@ -14,5 +14,3 @@ class RefPoInput extends React.Component {
     );
   }
 }
-
-export default RefPoInput;

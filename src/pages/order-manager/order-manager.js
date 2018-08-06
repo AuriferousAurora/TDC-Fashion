@@ -1,8 +1,13 @@
 import React, {Component, Fragment } from 'react';
 import { Route } from 'react-router-dom';
 
+// Component Import Declarations //
+
 import Sidebar from '../../components/base/sidebar/sidebar';
+import EmptyView from '../../components/order-manager/empty-view/empty-view';
 import DashboardOrderManager from '../../components/order-manager/dashboard/dashboard';
+
+// Icon Import Declarations //
 
 import Logo from '../../components/base/logo/logo.js';
 import DashboardIcon from './icons/IconDashboardEnable.png';
@@ -10,7 +15,6 @@ import NewOrderIcon from './icons/IconNewOrder.png';
 import PaymentIcon from './icons/IconPaymentsDisable.png';
 import ShippingIcon from './icons/IconShippingDisable.png';
 import NotificationIcon from './icons/IconNotificationsDisable.png';
-import EmptyView from '../../components/order-manager/empty-view/empty-view';
 
 const Dashboard = () => (
   <DashboardOrderManager/>
