@@ -485,5 +485,7 @@ body {
   to {
     width: 0;
     background: transparent; } }
+.landing {
+  color: blue; }
 
 /*# sourceMappingURL=index.css.map */
