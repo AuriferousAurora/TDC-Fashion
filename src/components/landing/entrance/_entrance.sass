@@ -1,13 +1,45 @@
 .landing__entrance
-  width: 100%
-  height: 70%
-  background: blue
+  +rc-flex(100%, 100%)
+  background: $background-color
+  .entrance__left
+    +custom-flex(column, center, flex-end, 15%, 100%)
+    .left__side-script
+      margin-top: 200%
+      margin-right: 6%
+      width: 12%
+      height: 10em
+      background: red
+  .entrance__middle
+    +cc-flex(30%, 100%)
+    .middle__tagline
+      +custom-flex(column, center, flex-start, 100%, 8%)
+      span.tagline__top, span.tagline__bottom
+        font-family: $secondary-font
+        font-size: 1.2em
+        font-weight: bold
+    .middle__description
+      +custom-flex(column, center, flex-start, 100%, 8%)
+      span
+        font-family: $secondary-font
+        font-size: 1.1em
+    .middle__button-container
+      +custom-flex(row, flex-end, center, 100%, 10%)
+      .middle__button
+        margin-right: 10%
+  .entrance__right
+    width: 50%
+    height: 100%
+
+// Test schtuff.
 
 .ent-yellow
+  +rc-flex(100%, 100%)
   background: yellow
 
 .ent-green
+  +rc-flex(100%, 100%)
   background: green
 
 .ent-orange
+  +rc-flex(100%, 100%)
   background: orange

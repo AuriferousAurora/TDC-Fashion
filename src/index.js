@@ -5,27 +5,32 @@ import { render } from 'react-dom';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-// This import accesses the main CSS file generates by 'index.sass' and makes it available to every sub-component within Appliocation.
+// This import accesses the main CSS file generates by 'index.sass' and makes it available to every sub-component within  the application.
 
 import './styles/index.css';
 
-// This section declares imports for main pages within the application (it may need to be restuctured such that the landing page is the first thing that is displayed and everything else is rendered based on the users input via the links established by React Router).
+// This section declares imports for pages within the application.
 
-// ============================= //
-// MAIN ROUTES CURRENTLY MOUNTED //
-// ============================= //
+// ================================= //
+// { MAIN } ROUTES CURRENTLY MOUNTED //
+// ================================= //
 
 import LandingPage from './pages/landing/landing';
 import OrderManager from './pages/order-manager/order-manager';
 
-// This section declares imports for typefaces. Each typeface is included via NPM and listed inside of the 'package.json' file within the 'dependencies' object.
+// This section declares imports for typefaces. Each typeface is included via NPM and listed inside the 'package.json' file within the 'dependencies' object.
 
 import 'typeface-roboto';
 import 'typeface-nunito';
+import 'typeface-alegreya';
+
+// This variable declaration returns the landing page component so that it can be used as a part of the 'component' functionality provided by React Router on line 37.
 
 const Landing = () => (
   <LandingPage/>
 );
+
+// This component acts as the index for the project. Upon loading, the landing page is rendered, and each other route is accessible via various means.
 
 class Application extends Component {
   render() {
@@ -37,5 +42,7 @@ class Application extends Component {
     );
   }
 }
+
+// The { render } function import as part of the ReactDOM mounts the top-level 'Application' component wrapped in 'Router' tags from React Router.
 
 render( <Router><Application/></Router>, document.getElementById('root'));

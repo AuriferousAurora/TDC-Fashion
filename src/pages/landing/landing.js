@@ -12,9 +12,9 @@ class LandingPage extends Component {
           right={<img src={'./resources/light-acronym.svg'} alt={'TDC'}/>}>
         </Header>
         <Entrance/>
-        <Entrance className='ent-yellow'/>
-        <Entrance calssName='ent-green'/>
-        <Entrance className='ent-orange'/>
+        <div className='ent-yellow'></div>
+        <div className='ent-green'></div>
+        <div className='ent-orange'></div>
       </Fragment>
     );
   }
