@@ -51,7 +51,10 @@ body {
     height: 100%; }
 
 .header {
-  display: flex; }
+  display: flex;
+  position: fixed;
+  z-index: 7500;
+  width: 100%; }
 
 .logo {
   display: flex;
@@ -96,6 +99,20 @@ body {
 
 .sidebar__icon--dashboard {
   background: #E2B64D; }
+
+.landing__entrance {
+  width: 100%;
+  height: 70%;
+  background: blue; }
+
+.ent-yellow {
+  background: yellow; }
+
+.ent-green {
+  background: green; }
+
+.ent-orange {
+  background: orange; }
 
 .order-dashboard {
   box-sizing: border-box;
@@ -487,5 +504,25 @@ body {
     background: transparent; } }
 .landing {
   color: blue; }
+
+.header--landing {
+  height: 15%;
+  background: red;
+  opacity: 0.5; }
+  .header--landing .header__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    background: red; }
+    .header--landing .header__left img {
+      margin-left: 13%; }
+  .header--landing .header__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%; }
 
 /*# sourceMappingURL=index.css.map */

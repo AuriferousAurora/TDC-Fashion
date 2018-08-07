@@ -1,2 +1,15 @@
 .landing
   color: blue
+
+.header--landing
+  height: 15%
+  background: red
+  opacity: 0.5
+  .header__left
+    +rc-flex(90%, 100%)
+    background: red
+    img
+      // Not dead center. Need to figure out how to go about doing that.
+      margin-left: 13%
+  .header__right
+    +rc-flex(10%, 100%)

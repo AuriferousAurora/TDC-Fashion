@@ -9,7 +9,7 @@ import DashboardOrderManager from '../../components/order-manager/dashboard/dash
 
 // Icon Import Declarations //
 
-import Logo from '../../components/base/logo/logo.js';
+import { Logo } from '../../components/base/logo/logo.js';
 import DashboardIcon from './icons/IconDashboardEnable.png';
 import NewOrderIcon from './icons/IconNewOrder.png';
 import PaymentIcon from './icons/IconPaymentsDisable.png';
