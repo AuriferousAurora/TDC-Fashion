@@ -8,8 +8,9 @@ class LandingPage extends Component {
     return (
       <Fragment>
         <Header className='header--landing landing__header' 
-          left={<img src={'./resources/light-logo.svg'} alt='TDC Fashion'/>} 
-          right={<img src={'./resources/light-acronym.svg'} alt={'TDC'}/>}>
+          left={'TDC Fashion'} 
+          right={<svg className='menu-button' viewBox='0 0 100 100'>
+            <path d='./src/pages/landing/resources/light-acronym.svg'/></svg>}>
         </Header>
         <Entrance/>
         <div className='ent-yellow'></div>
