@@ -5,7 +5,8 @@ import BgImage from './assets/girl-virtual-work.jpeg';
 
 const bgStyle = {
   backgroundImage: "url(" + BgImage + ")",
-  backgroundSize: 'cover'
+  backgroundSize: 'cover',
+  backgroundPosition: 'center'
 };
 class Entrance extends Component {
   render() {
