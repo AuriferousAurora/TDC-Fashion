@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import { LinkButton } from '../../../components/base/buttons/buttons';
+
+import BgImage from './assets/girl-virtual-work.jpeg';
+
+const bgStyle = {
+  backgroundImage: "url(" + BgImage + ")",
+  backgroundSize: 'cover'
+};
 class Entrance extends Component {
   render() {
     return (
-      <div className={'landing__entrance ' + this.props.className}>
+      <div style={ bgStyle } className={'landing__entrance ' + this.props.className}>
         <div className='entrance__left'>
           <div className='left__side-script'></div>
         </div>
