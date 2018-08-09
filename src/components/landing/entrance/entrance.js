@@ -24,7 +24,7 @@ class Entrance extends Component {
             <span>Our process brings your designs to life</span>
           </div>
           <div className='middle__button-container'>
-            <LinkButton className='middle__button' destination='/'><span>Begin a Project</span></LinkButton>
+            <LinkButton className='middle__button' destination='/order'><span>Begin a Project</span></LinkButton>
           </div>
         </div>
 

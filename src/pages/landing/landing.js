@@ -11,16 +11,32 @@ class LandingPage extends Component {
     this.state = {
       sidebarOn: false
     }
-    this.handleSidebarToggleChange = this.handleSidebarToggleChange.bind(this);
+    this.handleSidebarToggle = this.handleSidebarToggle.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+    this.handleOutsideClick = this.handleOutsideClick.bind(this); 
   }
 
-  handleSidebarToggleChange() {
+  handleSidebarToggle() {
     this.setState(prevState => ({ sidebarOn: !this.setState.sidebarOn }));
   }
+
+  handleClick() {
+    if (!this.state.sidebarOn) { document.addEventListener('click', this.handleOutsideClick, false);
+    } else { document.removeEventListener('click', this.handleOutsideClick, false) }
+    this.setState(prevState => ({ sidebarOn: !prevState.sidebarOn}));
+  }
+
+  handleOutsideClick(e) {
+    if (this.node.contains(e.target)) {
+      return;
+    }
+    this.handleClick();
+  }
+
   render() {
     return (
       <Fragment>
-        <LandingHeader onClick={this.handleSidebarToggleChange} />
+        <LandingHeader onClick={this.handleSidebarToggle} />
         <LandingSidebar isOpen={this.state.sidebarOn}/>
         <Entrance/>
         <div className='ent-yellow'></div>
