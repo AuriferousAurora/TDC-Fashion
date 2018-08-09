@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 
 // Component Import Declarations //
 
-import Sidebar from '../../components/base/sidebar/sidebar';
+import { Sidebar } from '../../components/base/sidebar/sidebar';
 import EmptyView from '../../components/order-manager/empty-view/empty-view';
 import DashboardOrderManager from '../../components/order-manager/dashboard/dashboard';
 

@@ -1,14 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Sidebar extends Component {
-
-  render() {
-    return (
-      <div className={'sidebar ' + this.props.className}>
-        {this.props.children}
-      </div>
-    );
-  }
-}
-
-export default Sidebar;
+export const Sidebar = (props) => (
+  <div className={'sidebar ' + props.className}>
+    {props.children}
+  </div>
+);
