@@ -261,8 +261,8 @@ body {
     width: 10%;
     height: 100%; }
     .header--landing .header__right .menu-button {
-      background: #353535;
-      color: #FFFFFF; }
+      margin-bottom: 2%;
+      width: 2em; }
 
 .sidebar--landing {
   display: flex;
