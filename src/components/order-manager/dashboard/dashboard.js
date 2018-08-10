@@ -80,7 +80,7 @@ class DashboardOrderManager extends Component {
           <div className='order-dashboard__body'>
             <ProductInstantiation refPo={this.state.refPo} handleRefPoChange={this.handleRefPoChange}/>
             <Route 
-              path='/dashboard/product-details' 
+              path='/order/dashboard/product-details' 
               render={() => 
                 <ProductCreator 
                   description={this.state.description} 
