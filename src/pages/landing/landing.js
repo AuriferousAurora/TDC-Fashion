@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 
 import Entrance from '../../components/landing/entrance/entrance';
-import { LandingHeader } from '../../components/landing/header/header';
+import { LandingHeader } from '../../components/landing/header/header.test';
 import { LandingFooter } from '../../components/landing/footer/footer';
 import { LandingSidebar } from '../../components/landing/sidebar/sidebar';
  
