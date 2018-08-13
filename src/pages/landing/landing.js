@@ -8,16 +8,13 @@ import { LandingSidebar } from '../../components/landing/sidebar/sidebar';
 class LandingPage extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       sidebarOn: false
     }
-    this.handleSidebarToggle = this.handleSidebarToggle.bind(this);
+    
     this.handleClick = this.handleClick.bind(this);
     this.handleOutsideClick = this.handleOutsideClick.bind(this); 
-  }
-
-  handleSidebarToggle() {
-    this.setState(prevState => ({ sidebarOn: !this.setState.sidebarOn }));
   }
 
   handleClick() {
@@ -27,16 +24,13 @@ class LandingPage extends Component {
   }
 
   handleOutsideClick(e) {
-    if (this.node.contains(e.target)) {
-      return;
-    }
     this.handleClick();
   }
 
   render() {
     return (
       <Fragment>
-        <LandingHeader onClick={this.handleSidebarToggle} />
+        <LandingHeader onClick={this.handleClick} />
         <LandingSidebar isOpen={this.state.sidebarOn}/>
         <Entrance/>
         <div className='ent-yellow'></div>
