@@ -4,8 +4,7 @@ import { LandingEntrance } from '../../components/landing/entrance/entrance.test
 import { LandingHeader } from '../../components/landing/header/header.test';
 import { LandingFooter } from '../../components/landing/footer/footer';
 import { LandingSidebar } from '../../components/landing/sidebar/sidebar';
-
-import { LinkButton } from '../../components/base/buttons/buttons';
+import { LandingProcess } from '../../components/landing/process/process';
 
 // import { ParticleBackground } from '../../components/landing/particles/particle';
  
@@ -43,7 +42,7 @@ class LandingPage extends Component {
           </LinkButton>
         </ParticleBackground> */}
         <LandingEntrance/>
-        <div className='ent-yellow'></div>
+        <LandingProcess/>
         <div className='ent-green'></div>
         <div className='ent-orange'></div>
         <LandingFooter/>
