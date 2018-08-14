@@ -1,5 +1,5 @@
 .landing__entrance
-  +rc-flex(100%, 100%)
+  +custom-flex(column, center, flex-start, 100%, 70%)
   .entrance__left
     +custom-flex(column, center, center, 20%, 100%)
     .left__side-script
@@ -59,7 +59,7 @@
 
 .ent-yellow
   +rc-flex(100%, 100%)
-  background: yellow
+  background: $secondary-color
 
 .ent-green
   +rc-flex(100%, 100%)
@@ -68,3 +68,19 @@
 .ent-orange
   +rc-flex(100%, 100%)
   background: orange
+
+h1.entrance__tagline
+  box-sizing: border-box
+  display: inline-block
+  margin: 1.5em 0 1% 0.5em
+  text-align: left
+  color: $secondary-color
+  font-family: $secondary-font
+  font-size: 2.2em
+  font-weight: bold
+
+.entrance__action-button
+  box-sizing: border-box
+  margin: 0.5em 0 0 0.8em
+
+

@@ -1,9 +1,13 @@
 import React, { Component, Fragment } from 'react';
 
-import Entrance from '../../components/landing/entrance/entrance';
+import { LandingEntrance } from '../../components/landing/entrance/entrance.test';
 import { LandingHeader } from '../../components/landing/header/header.test';
 import { LandingFooter } from '../../components/landing/footer/footer';
 import { LandingSidebar } from '../../components/landing/sidebar/sidebar';
+
+import { LinkButton } from '../../components/base/buttons/buttons';
+
+// import { ParticleBackground } from '../../components/landing/particles/particle';
  
 class LandingPage extends Component {
   constructor(props) {
@@ -32,7 +36,13 @@ class LandingPage extends Component {
       <Fragment>
         <LandingHeader onClick={this.handleClick} />
         <LandingSidebar isOpen={this.state.sidebarOn}/>
-        <Entrance/>
+        {/* <ParticleBackground>
+          <h1 className='entrance__tagline' style={{zIndex: 5}}>Sustainable Ethical Premium Fashion on Demand</h1>
+          <LinkButton className='entrance__action-button' destination='/order'>
+            <span>Get Started Now</span>
+          </LinkButton>
+        </ParticleBackground> */}
+        <LandingEntrance/>
         <div className='ent-yellow'></div>
         <div className='ent-green'></div>
         <div className='ent-orange'></div>

@@ -152,10 +152,11 @@ body {
 
 .landing__entrance {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
-  height: 100%; }
+  height: 70%; }
   .landing__entrance .entrance__left {
     display: flex;
     flex-direction: column;
@@ -247,7 +248,7 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-  background: yellow; }
+  background: #353535; }
 
 .ent-green {
   display: flex;
@@ -265,6 +266,20 @@ body {
   height: 100%;
   background: orange; }
 
+h1.entrance__tagline {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 1.5em 0 1% 0.5em;
+  text-align: left;
+  color: #353535;
+  font-family: "Nunito", sans-serif;
+  font-size: 2.2em;
+  font-weight: bold; }
+
+.entrance__action-button {
+  box-sizing: border-box;
+  margin: 0.5em 0 0 0.8em; }
+
 .footer--landing {
   background: #000000;
   height: 25em; }
@@ -278,12 +293,12 @@ body {
 .header--landing {
   height: 15%; }
   .header--landing .header-title {
-    width: 30%;
+    height: 40%;
     position: absolute;
-    left: 35%; }
+    left: 1.3em; }
   .header--landing .menu-button {
     position: absolute;
-    right: 2.75em;
+    right: 1.3em;
     margin-bottom: 0.75em;
     width: 40px;
     height: 40px; }
@@ -306,7 +321,7 @@ body {
 
 .sidebar-open {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  width: 30%;
+  width: 50%;
   transition: 0.5s; }
 
 .sidebar-closed {
