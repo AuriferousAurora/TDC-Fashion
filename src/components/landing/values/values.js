@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Content from '../../base/content/content';
 
+import Image from './assets/designer-lady.jpeg';
 export const LandingValues = class LandingValues extends Component {
   constructor(props) {
     super(props);
@@ -11,7 +12,7 @@ export const LandingValues = class LandingValues extends Component {
     this.handleClickFour = this.handleClickFour.bind(this);
 
     this.state = {
-      oneOpen: true,
+      oneOpen: false,
       twoOpen: false,
       threeOpen: false,
       fourOpen: false
@@ -37,40 +38,78 @@ export const LandingValues = class LandingValues extends Component {
     const threeStatus = this.state.threeOpen ? 'values__description-open' : 'values__description-closed'
     const fourStatus = this.state.fourOpen ? 'values__description-open' : 'values__description-closed'
 
+    const mq = window.matchMedia( '(min-width: 600px)' );
 
-    return (  
+    if (mq.matches) { return (  
+        <Content className={ 'landing__values--large' }>
+          <div className='values__title-container'>
+            <h2 className='value__title'>Our Values</h2>
+          </div>
+          <div className='value__title-bar' onClick={this.handleClickOne}>
+            <span className='value__descriptor'>Transparent</span>
+          </div>   
+          <div className={ 'value__description ' + oneStatus }>
+            <img src={Image} alt='lady'/>
+            <span>From start to finish, our process is entirely visible.</span>
+          </div>
+
+          <div className='value__title-bar' onClick={this.handleClickTwo}>
+            <span className='value__descriptor'>Speed</span>
+          </div>
+          <div className={ 'value__description ' + twoStatus }>
+            <img src={Image} alt='lady'/>
+            <span>From start to finish, our process is entirely visible.</span>
+          </div>
+
+          <div className='value__title-bar' onClick={this.handleClickThree}>
+            <span className='value__descriptor'>Ethical</span>
+          </div>
+          <div className={ 'value__description ' + threeStatus }>
+            <img src={Image} alt='lady'/>
+            <span>From start to finish, our process is entirely visible.</span>
+          </div>
+
+          <div className='value__title-bar' onClick={this.handleClickFour}>
+            <span className='value__descriptor'>Economic</span>
+          </div>
+          <div className={ 'value__description ' + fourStatus }>
+            <img src={Image} alt='lady'/>
+            <span>From start to finish, our process is entirely visible.</span>
+          </div>
+        </Content> );
+    } else { return (  
       <Content className={ 'landing__values' }>
         <div className='values__title-container'>
-          <h2 className='values__title'>Our Values</h2>
+          <h2 className='value__title'>Our Values</h2>
         </div>
-        <div className='values__title-bar' onClick={this.handleClickOne}>
+        <div className='value__title-bar' onClick={this.handleClickOne}>
           <span className='value__descriptor'>Transparent</span>
         </div>   
-        <div className={ 'values__description ' + oneStatus }>
+        <div className={ 'value__description ' + oneStatus }>
           <span>From start to finish, our process is entirely visisble.</span>
         </div>
 
-        <div id='value__speed' className='values__title-bar' onClick={this.handleClickTwo}>
+        <div className='value__title-bar' onClick={this.handleClickTwo}>
           <span className='value__descriptor'>Speed</span>
         </div>
-        <div className={ 'values__description ' + twoStatus } >
+        <div className={ 'value__description ' + twoStatus } >
           <span>The faster you get your order, the better.</span>
         </div>
 
-        <div id='value__ethical' className='values__title-bar' onClick={this.handleClickThree}>
+        <div className='value__title-bar' onClick={this.handleClickThree}>
           <span className='value__descriptor'>Ethical</span>
         </div>
-        <div className={'values__description ' + threeStatus }>
+        <div className={'value__description ' + threeStatus }>
           <span>Knowing that your clothes were made in humane conditions by people paid fair wages is important.</span>
         </div>  
 
-        <div id='values__economic' className='values__title-bar' onClick={this.handleClickFour}>
+        <div className='value__title-bar' onClick={this.handleClickFour}>
           <span className='value__descriptor'>Economic</span>
         </div>
-        <div className={ 'values__description ' + fourStatus }>
+        <div className={ 'value__description ' + fourStatus }>
           <span className='description__text'>At the end of the day, money matters. We help you cut costs and keep quality.</span>
         </div>  
-      </Content>
-    );
+      </Content> );
+    }
   }
 }
