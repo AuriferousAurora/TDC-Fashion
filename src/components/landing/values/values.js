@@ -58,7 +58,7 @@ export const LandingValues = class LandingValues extends Component {
           </div>
           <div className={ 'value__description ' + twoStatus }>
             <img src={Image} alt='lady'/>
-            <span>From start to finish, our process is entirely visible.</span>
+            <span>The faster you get your order, the better.</span>
           </div>
 
           <div className='value__title-bar' onClick={this.handleClickThree}>
@@ -66,7 +66,7 @@ export const LandingValues = class LandingValues extends Component {
           </div>
           <div className={ 'value__description ' + threeStatus }>
             <img src={Image} alt='lady'/>
-            <span>From start to finish, our process is entirely visible.</span>
+            <span>Knowing that your clothes were made in humane conditions by people paid fair wages is important.</span>
           </div>
 
           <div className='value__title-bar' onClick={this.handleClickFour}>
@@ -74,7 +74,7 @@ export const LandingValues = class LandingValues extends Component {
           </div>
           <div className={ 'value__description ' + fourStatus }>
             <img src={Image} alt='lady'/>
-            <span>From start to finish, our process is entirely visible.</span>
+            <span>At the end of the day, money matters. We help you cut costs and keep quality.</span>
           </div>
         </Content> );
     } else { return (  
