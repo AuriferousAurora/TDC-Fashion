@@ -18,14 +18,26 @@
     margin: 3% 0
     padding: 0.5em
     width: 90%
+    max-width: 33.75em
     background: $primary-color
     box-shadow: $standard-box-shadow
   .value__descriptor
     margin-right: 0.5em
-    color: $base-white
+    color: $base-black
     font-family: $secondary-font
     font-size: 1.7em
   .values__description
-    width: 90%
-    height: 2px
-    background: black
+    width: 92%
+    background: $base-white
+
+.values__description-open
+  display: flex
+  box-sizing: border-box
+  padding: 10%
+  height: auto
+  transition-duration: 1s
+  color: $base-black
+  font-family: $primary-font
+
+.values__description-closed
+  display: none

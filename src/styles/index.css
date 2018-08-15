@@ -303,17 +303,29 @@ body {
     margin: 3% 0;
     padding: 0.5em;
     width: 90%;
+    max-width: 33.75em;
     background: #E2B64D;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
   .landing__values .value__descriptor {
     margin-right: 0.5em;
-    color: #FFFFFF;
+    color: #000000;
     font-family: "Nunito", sans-serif;
     font-size: 1.7em; }
   .landing__values .values__description {
-    width: 90%;
-    height: 2px;
-    background: black; }
+    width: 92%;
+    background: #FFFFFF; }
+
+.values__description-open {
+  display: flex;
+  box-sizing: border-box;
+  padding: 10%;
+  height: auto;
+  transition-duration: 1s;
+  color: #000000;
+  font-family: "Roboto", sans-serif; }
+
+.values__description-closed {
+  display: none; }
 
 .order-dashboard {
   box-sizing: border-box;
