@@ -1,76 +1,21 @@
 .landing__entrance
   +custom-flex(column, center, flex-start, 100%, 70%)
-  .entrance__left
-    +custom-flex(column, center, center, 20%, 100%)
-    .left__side-script
-      display: flex
-      flex-direction: column
-      position: fixed
-      top: 37em
-      left: 5em
-      width: 1em
-      height: 30em
-      .side-script__share
-        width: 100%
-        height: 4.6em  
-        span.share
-          display: block
-          transform: rotate(0.75turn)
-          font-family: $tertiary-font
-          font-size: 0.9em
-          font-style: italic      
-      .side-script__url-tag
-        width: 100%
-        height: 2em
-        span.url-tag
-          display: block
-          transform: rotate(0.75turn)
-          font-family: $tertiary-font
-          font-size: 0.9em
-          font-style: italic
-      .side-script__img
-        width: 100%
-        height: auto
-        img
-          width: 100%
-  .entrance__middle
-    +cc-flex(20%, 100%)
-    .middle__tagline
-      +custom-flex(column, center, flex-start, 100%, 8%)
-      span.tagline__top, span.tagline__bottom
-        font-family: $secondary-font
-        font-size: 1.2em
-        font-weight: bold
-    .middle__description
-      +custom-flex(column, center, flex-start, 100%, 8%)
-      span
-        font-family: $secondary-font
-        font-size: 1.1em
-    .middle__button-container
-      +custom-flex(row, flex-end, center, 100%, 10%)
-      .middle__button
-        margin-right: 10%
-  .entrance__right
-    +custom-flex(row, flex-start, center, 60%, 100%)
-    img.right__img
-      width: 11em
+  h1.entrance__tagline
+    box-sizing: border-box
+    display: inline-block
+    margin: 1.5em 0 1% 0.5em
+    text-align: left
+    color: $secondary-color
+    font-family: $secondary-font
+    font-size: 2.2em
+    font-weight: bold
+  .entrance__action-button
+    box-sizing: border-box
+    margin: 0.5em 0 0 0.8em
+  +media(S475)
+    +custom-flex(column, center, center, 100%, 70%)
+    h1.entrance__tagline
+      text-align: center
 
-.ent-orange
-  +rc-flex(100%, 100%)
-  background: $secondary-color
-
-h1.entrance__tagline
-  box-sizing: border-box
-  display: inline-block
-  margin: 1.5em 0 1% 0.5em
-  text-align: left
-  color: $secondary-color
-  font-family: $secondary-font
-  font-size: 2.2em
-  font-weight: bold
-
-.entrance__action-button
-  box-sizing: border-box
-  margin: 0.5em 0 0 0.8em
 
 
