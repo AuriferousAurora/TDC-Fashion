@@ -1,117 +1,707 @@
-/*
-Error: Mixin "custom-flex" does not accept a content block.
-        on line 2 of components/landing/entrance/_entrance.sass, in `custom-flex'
-        from line 2 of components/landing/entrance/_entrance.sass
-        from line 1 of components/landing/_landing-directory.sass
-        from line 2 of components/_component-directory.sass
-        from line 6 of index.sass
+body {
+  margin: 0;
+  background: #FFFFFF; }
 
-1: // =================== //
-2: // Main Sass Directory //
-3: // =================== //
-4: 
-5: @import 'abstracts/abstract-directory'
-6: @import 'components/component-directory'
-7: @import 'pages/page-directory'
+#root {
+  width: 100vw;
+  height: 100vh; }
 
-Backtrace:
-components/landing/entrance/_entrance.sass:2:in `custom-flex'
-components/landing/entrance/_entrance.sass:2
-components/landing/_landing-directory.sass:1
-components/_component-directory.sass:2
-index.sass:6
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:98:in `block in with_mixin'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:98:in `with_mixin'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `map'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `map'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `block in with_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `with_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `map'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `block in with_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `with_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `map'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `block in with_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:88:in `with_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `block in with_base'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:135:in `with_frame'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/stack.rb:79:in `with_base'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `map'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/visitors/perform.rb:10:in `visit'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:36:in `css_tree'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:320:in `block in watch'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-/Users/kyleeverettlang/.rvm/rubies/ruby-2.5.1/lib/ruby/gems/2.5.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Mixin \"custom-flex\" does not accept a content block.\A         on line 2 of components/landing/entrance/_entrance.sass, in `custom-flex'\A         from line 2 of components/landing/entrance/_entrance.sass\A         from line 1 of components/landing/_landing-directory.sass\A         from line 2 of components/_component-directory.sass\A         from line 6 of index.sass\A \A 1: // =================== //\A 2: // Main Sass Directory //\A 3: // =================== //\A 4: \A 5: @import 'abstracts/abstract-directory'\A 6: @import 'components/component-directory'\A 7: @import 'pages/page-directory'"; }
+.link {
+  text-decoration: none; }
+
+.button {
+  border: none;
+  border-radius: 0.125em;
+  background: #E2B64D;
+  width: 189px;
+  height: 46px;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  letter-spacing: -0.8px; }
+
+.link-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 0.125em;
+  background: #E2B64D;
+  padding: 0 1em;
+  width: auto;
+  height: 2.1em;
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+  /* Refactor this into appropriate 'em' value. */
+  font-size: 22px;
+  letter-spacing: -0.8px; }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
+  .footer a {
+    color: #FFFFFF; }
+
+.ref-po__form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: 84px;
+  box-sizing: border-box;
+  padding-left: 1.5em; }
+  .ref-po__form .ref-po__submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%; }
+
+.header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 7500;
+  width: 100%; }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 3em;
+  margin: 15% 10%; }
+  .logo .logo__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    background: #353535;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif;
+    font-size: 2em; }
+  .logo .logo__right {
+    background: #E2B64D;
+    width: 5%;
+    height: 100%; }
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  z-index: 8500;
+  overflow-x: hidden;
+  height: 100%; }
+
+.sidebar--order-manager {
+  width: 10%;
+  background: #746f75;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5); }
+
+.sidebar__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%; }
+
+.sidebar__icon--dashboard {
+  background: #E2B64D; }
+
+.landing__entrance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 70%; }
+  .landing__entrance h1.entrance__tagline {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 1.5em 0 1% 0.5em;
+    text-align: left;
+    color: #353535;
+    font-family: "Nunito", sans-serif;
+    font-size: 2.2em;
+    font-weight: bold; }
+  .landing__entrance .entrance__action-button {
+    box-sizing: border-box;
+    margin: 0.5em 0 0 0.8em;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+  @media (min-width: 29.68em) {
+    .landing__entrance {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 70%; }
+      .landing__entrance h1.entrance__tagline {
+        text-align: center; } }
+
+.footer--landing {
+  background: #000000;
+  height: 26em;
+  padding-top: 2em; }
+  .footer--landing .footer__link-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20em;
+    padding-bottom: 2em; }
+    .footer--landing .footer__link-container .footer__link {
+      margin: 0.9em;
+      color: #FFFFFF;
+      font-family: "Alegreya", sans-serif; }
+  .footer--landing .footer__social-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7em; }
+    .footer--landing .footer__social-container img.landing__social-link {
+      margin: 0.5em;
+      padding: 0.3em;
+      width: 2.5em; }
+  .footer--landing .footer__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 7em;
+    color: white;
+    font-family: "Alegreya", sans-serif; }
+
+.header--landing {
+  height: 15%; }
+  .header--landing .header-title {
+    height: 40%;
+    position: absolute;
+    left: 1.3em; }
+  .header--landing .menu-button {
+    position: absolute;
+    right: 1.3em;
+    margin-bottom: 0.75em;
+    width: 40px;
+    height: 40px; }
+
+.landing__process {
+  padding-bottom: 3em;
+  width: 100%;
+  height: auto;
+  background: #353535; }
+  .landing__process .process__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5em; }
+    .landing__process .process__title-container .process__title {
+      color: #FFFFFF;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.5em;
+      font-weight: normal; }
+  .landing__process .process__outer-container {
+    width: 100%;
+    height: auto; }
+    @media (min-width: 37.5em) {
+      .landing__process .process__outer-container {
+        height: 17em;
+        overflow-x: auto; } }
+  .landing__process .process__inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+    @media (min-width: 37.5em) {
+      .landing__process .process__inner-container {
+        flex-direction: row;
+        justify-content: start;
+        width: 100em;
+        height: 100%; }
+        .landing__process .process__inner-container #process__first-step {
+          margin-left: 7em; }
+        .landing__process .process__inner-container #process__last-step {
+          margin-right: 10em; } }
+    @media (min-width: 93.75em) {
+      .landing__process .process__inner-container {
+        justify-content: center;
+        width: 100%; }
+        .landing__process .process__inner-container #process__first-step {
+          margin-left: 5em; }
+        .landing__process .process__inner-container #process__last-step {
+          margin-right: 5em; } }
+    .landing__process .process__inner-container .step__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 12em;
+      margin: 2em 0; }
+      @media (min-width: 37.5em) {
+        .landing__process .process__inner-container .step__container {
+          margin: 2em 5em; } }
+      .landing__process .process__inner-container .step__container .step__icon {
+        width: 7em;
+        margin-bottom: 1.5em; }
+      .landing__process .process__inner-container .step__container .step__title {
+        color: #FFFFFF;
+        font-family: "Nunito", sans-serif;
+        font-size: 0.8em; }
+
+.sidebar--landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  right: 0;
+  background: #4f4f4f; }
+  .sidebar--landing .landing-sidebar__spacer {
+    width: 100%;
+    height: 2em; }
+  .sidebar--landing .sidebar__link {
+    margin: 2%;
+    padding: 2%;
+    color: #FFFFFF;
+    font-family: "Roboto", sans-serif; }
+
+.sidebar-open {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  width: 50%;
+  transition: 0.5s; }
+
+.sidebar-closed {
+  width: 0;
+  transition: 0.5s; }
+
+.landing__values {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 0;
+  width: 100%;
+  height: auto;
+  background: #F7F7F7; }
+  .landing__values .values__title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em; }
+    .landing__values .values__title-container h2.values__title {
+      margin: 0;
+      color: #353535;
+      font-family: "Roboto", sans-serif; }
+  .landing__values .values__title-bar {
+    display: flex;
+    justify-content: flex-end;
+    margin: 3% 0;
+    padding: 0.5em;
+    width: 90%;
+    background: #E2B64D;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); }
+  .landing__values .value__descriptor {
+    margin-right: 0.5em;
+    color: #FFFFFF;
+    font-family: "Nunito", sans-serif;
+    font-size: 1.7em; }
+  .landing__values .values__description {
+    width: 90%;
+    height: 2px;
+    background: black; }
+
+.order-dashboard {
+  box-sizing: border-box;
+  margin-left: 10%;
+  padding-right: 2.875em;
+  padding-bottom: 5%;
+  padding-left: 21px;
+  width: 90%;
+  height: auto;
+  min-height: 100vh;
+  background: #F7F7F7; }
+
+.order-dashboard__top-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  box-sizing: border-box; }
+  .order-dashboard__top-bar .top-bar__left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 20%;
+    height: 100%;
+    padding-top: 15px; }
+    .order-dashboard__top-bar .top-bar__left .top-bar__back-order {
+      margin: 0;
+      width: 100px;
+      height: 20px;
+      font-family: Arial;
+      font-size: 18px;
+      letter-spacing: -1px;
+      color: #51433a; }
+    .order-dashboard__top-bar .top-bar__left .top-bar__new-order-title {
+      margin: 0;
+      height: 39px;
+      font-family: Arial;
+      font-size: 35px;
+      font-weight: bold;
+      letter-spacing: -1.9px;
+      color: #51433a; }
+  .order-dashboard__top-bar .top-bar__right {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80%;
+    height: 100%; }
+    .order-dashboard__top-bar .top-bar__right .top-bar__button--cancel {
+      background: #E2B64D;
+      margin-right: 9px; }
+    .order-dashboard__top-bar .top-bar__right .top-bar__button--save {
+      background: #353535;
+      margin-right: 9px; }
+    .order-dashboard__top-bar .top-bar__right .top-bar__button--req-quote {
+      background: #9c6e00;
+      width: 210px; }
+
+.order-dashboard__body {
+  padding-top: 20px;
+  padding-bottom: 30px; }
+
+.empty-view__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 12.5em;
+  height: auto;
+  position: relative;
+  top: 30%;
+  left: 50%; }
+  .empty-view__container span.empty-view__text {
+    margin-bottom: 0.2em;
+    width: 16.938em;
+    font-family: Arial;
+    font-size: 2.5em;
+    font-weight: bold;
+    letter-spacing: -2.1px;
+    text-align: center;
+    color: #BDBDBD; }
+
+.product-creator {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  box-sizing: border-box;
+  margin-top: 19px;
+  padding: 30px 2%;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background: #FFFFFF; }
+  .product-creator .product-creator__number-label {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 100%;
+    height: 8em;
+    position: relative; }
+    .product-creator .product-creator__number-label span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: Arial;
+      font-size: 25px;
+      letter-spacing: -1.3px;
+      color: #504239; }
+    .product-creator .product-creator__number-label .placeholder-input-div {
+      width: 100%;
+      height: 70%;
+      background: #F7F7F7; }
+  .product-creator .add-feature {
+    margin: 20px 0;
+    color: #8acc41;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.5; }
+  .product-creator .add-sketches {
+    box-sizing: border-box;
+    margin-top: 10px;
+    background: #F7F7F7; }
+    .product-creator .add-sketches button.add-sketch {
+      border: none;
+      border-radius: 0.125em;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+      background-color: #353535;
+      width: 151px;
+      height: 33px;
+      color: #FFFFFF;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: -0.6px; }
+  .product-creator .add-tech-sheets {
+    box-sizing: border-box;
+    margin-top: 10px;
+    background: #F7F7F7; }
+    .product-creator .add-tech-sheets button.add-tech-sheet {
+      border: none;
+      border-radius: 0.125em;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+      background-color: #353535;
+      width: 151px;
+      height: 33px;
+      color: #FFFFFF;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: -0.6px; }
+
+.bookmark {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -3em;
+  left: 1em;
+  padding-top: 3px;
+  width: 30px;
+  height: 64px;
+  background-color: #E2B64D;
+  color: #FFFFFF;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: -1px; }
+
+.product-form__description-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5em;
+  box-sizing: border-box;
+  position: relative; }
+  .product-form__description-input input {
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575; }
+  .product-form__description-input input:focus {
+    outline: none; }
+  .product-form__description-input label {
+    position: absolute;
+    left: 1.5em;
+    top: 1.8em;
+    color: #999;
+    font-size: 1.2em;
+    pointer-events: none;
+    transition: 0.2s ease all; }
+  .product-form__description-input input:focus ~ label, .product-form__description-input input:valid ~ label {
+    top: 0.3em;
+    font-size: 14px;
+    color: #26A69A; }
+  .product-form__description-input .input__bar {
+    position: relative;
+    display: block;
+    width: 100%; }
+  .product-form__description-input .input__bar::before, .product-form__description-input .input__bar::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    width: 0;
+    height: 2px;
+    background: #26A69A;
+    transition: 0.2s ease all; }
+  .product-form__description-input .input__bar::before {
+    left: 50%; }
+  .product-form__description-input .input__bar::after {
+    right: 50%; }
+  .product-form__description-input input:focus ~ .bar::before, .product-form__description-input input:focus ~ .bar::after {
+    width: 50%; }
+  .product-form__description-input .input__highlight {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 150px;
+    height: 60%;
+    pointer-events: none;
+    opacity: 0.5; }
+  .product-form__description-input input:focus ~ .input__highlight {
+    animation: inputHighlighter 0.3s ease; }
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE; }
+  to {
+    width: 0;
+    background: transparent; } }
+  .product-form__description-input label {
+    left: 0.5em;
+    top: 1.6em; }
+  .product-form__description-input input:focus ~ label, .product-form__description-input input:valid ~ label {
+    left: 0; }
+
+.product-details {
+  width: 100%;
+  height: 8em;
+  background: red; }
+
+.product-instantiation {
+  width: 100%;
+  height: 278px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #FFFFFF; }
+  .product-instantiation .label-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 102px; }
+    .product-instantiation .label-container .order-number-label {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 241px;
+      height: 45px;
+      background-color: #51433a; }
+      .product-instantiation .label-container .order-number-label .label__left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 232px;
+        height: 100%; }
+      .product-instantiation .label-container .order-number-label .order-number {
+        width: 161px;
+        height: 33px;
+        font-family: Arial;
+        font-size: 30px;
+        letter-spacing: -1.6px;
+        color: #FFFFFF; }
+      .product-instantiation .label-container .order-number-label .label__right {
+        width: 9px;
+        height: 100%;
+        background-color: #E2B64D; }
+  .product-instantiation .reference-po-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 84px;
+    padding-left: 10px; }
+    .product-instantiation .reference-po-container #test-input {
+      width: 100%; }
+  .product-instantiation .add-product-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 92px;
+    box-sizing: border-box;
+    padding: 0 14px; }
+    .product-instantiation .add-product-container .products-label {
+      width: 94px;
+      height: 28px;
+      font-family: Arial;
+      font-size: 25px;
+      letter-spacing: -1.3px;
+      color: #51433a; }
+    .product-instantiation .add-product-container .add-product {
+      border: none;
+      border-radius: 0.125em;
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
+      background-color: #E2B64D;
+      width: 169px;
+      height: 33px;
+      color: #FFFFFF;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      letter-spacing: -0.6px; }
+    .product-instantiation .add-product-container .add-product__link-button {
+      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
+
+.product-form__ref-po-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 2%; }
+  .product-form__ref-po-input input {
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #757575; }
+  .product-form__ref-po-input input:focus {
+    outline: none; }
+  .product-form__ref-po-input label {
+    position: absolute;
+    left: 1.5em;
+    top: 1.8em;
+    color: #999;
+    font-size: 1.2em;
+    pointer-events: none;
+    transition: 0.2s ease all; }
+  .product-form__ref-po-input input:focus ~ label, .product-form__ref-po-input input:valid ~ label {
+    top: 0.3em;
+    font-size: 14px;
+    color: #26A69A; }
+  .product-form__ref-po-input .input__bar {
+    position: relative;
+    display: block;
+    width: 100%; }
+  .product-form__ref-po-input .input__bar::before, .product-form__ref-po-input .input__bar::after {
+    content: "";
+    position: absolute;
+    bottom: 1px;
+    width: 0;
+    height: 2px;
+    background: #26A69A;
+    transition: 0.2s ease all; }
+  .product-form__ref-po-input .input__bar::before {
+    left: 50%; }
+  .product-form__ref-po-input .input__bar::after {
+    right: 50%; }
+  .product-form__ref-po-input input:focus ~ .bar::before, .product-form__ref-po-input input:focus ~ .bar::after {
+    width: 50%; }
+  .product-form__ref-po-input .input__highlight {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 150px;
+    height: 60%;
+    pointer-events: none;
+    opacity: 0.5; }
+  .product-form__ref-po-input input:focus ~ .input__highlight {
+    animation: inputHighlighter 0.3s ease; }
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE; }
+  to {
+    width: 0;
+    background: transparent; } }
+
+/*# sourceMappingURL=index.css.map */
