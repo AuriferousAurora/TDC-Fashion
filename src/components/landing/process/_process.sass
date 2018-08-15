@@ -1,26 +1,52 @@
 .landing__process
-  display: flex
-  flex-direction: column
-  justify-content: space-around
-  align-items: center
   padding-bottom: 3em
   width: 100%
   height: auto
   background: $secondary-color
-  .process__title
-    margin: 1em 0
-    color: $base-white
-    font-family: $primary-font
-    font-size: 1.5em
-    font-weight: normal
-  .step__container
-    +cc-flex(90%, auto)
-    margin: 2em 0
-    .step__icon
-      width: 7em
-      margin-bottom: 1.5em
-    .step__title
+  .process__title-container
+    +rc-flex(100%, 5em)
+    .process__title
       color: $base-white
-      font-family: $secondary-font
-      font-size: 0.8em
+      font-family: $primary-font
+      font-size: 1.5em
+      font-weight: normal
+  .process__outer-container
+    width: 100%
+    height: auto
+    +media(S600)
+      height: 17em
+      overflow-x: auto
+  .process__inner-container
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    align-items: center
+    +media(S600)
+      flex-direction: row
+      justify-content: start
+      width: 100em
+      height: 100%
+      #process__first-step
+        margin-left: 7em
+      #process__last-step
+        margin-right: 10em
+    +media(S1500)
+      justify-content: center
+      width: 100%
+      #process__first-step
+        margin-left: 5em
+      #process__last-step
+        margin-right: 5em
+    .step__container
+      +custom-flex(column, center, center, 90%, 12em)
+      margin: 2em 0
+      +media(S600)
+        margin: 2em 5em
+      .step__icon
+        width: 7em
+        margin-bottom: 1.5em
+      .step__title
+        color: $base-white
+        font-family: $secondary-font
+        font-size: 0.8em
 
