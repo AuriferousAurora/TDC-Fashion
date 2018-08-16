@@ -20,16 +20,30 @@ export const LandingValues = class LandingValues extends Component {
   }
 
   handleClickOne() { 
-    this.setState({ oneOpen: !this.state.oneOpen });
+    this.setState({ oneOpen: !this.state.oneOpen, 
+                    twoOpen: false, 
+                    threeOpen: false, 
+                    fourOpen: false });
   }
+
   handleClickTwo() { 
-    this.setState({ twoOpen: !this.state.twoOpen });
+    this.setState({ oneOpen: false, 
+                    twoOpen: !this.state.twoOpen, 
+                    threeOpen: false, 
+                    fourOpen: false });
   }
+
   handleClickThree() { 
-    this.setState({ threeOpen: !this.state.threeOpen }); 
+    this.setState({ oneOpen: false, 
+                    twoOpen: false, 
+                    threeOpen: !this.state.threeOpen, 
+                    fourOpen: false });
   }
   handleClickFour() { 
-    this.setState({ fourOpen: !this.state.fourOpen }); 
+    this.setState({ oneOpen: false, 
+                    twoOpen: false, 
+                    threeOpen: false, 
+                    fourOpen: !this.state.fourOpen });
   }
 
   render() {
