@@ -110,6 +110,36 @@ body {
 .sidebar__icon--dashboard {
   background: #E2B64D; }
 
+.landing__about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%; }
+  @media (min-width: 37.5em) {
+    .landing__about {
+      height: 50%; }
+      .landing__about span.about__title {
+        font-size: 4em;
+        font-weight: bold; } }
+  .landing__about span.about__title {
+    display: inline-block;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 3em; }
+  @media (min-width: 62.5em) {
+    .landing__about {
+      height: 65%; }
+      .landing__about span.about__title {
+        margin-right: 40%; }
+      .landing__about .about__link-button {
+        margin-right: 40%; } }
+
+.about__link-button {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 23px; }
+
 .landing__entrance {
   display: flex;
   flex-direction: column;
@@ -145,6 +175,9 @@ body {
   background: #000000;
   height: 26em;
   padding-top: 2em; }
+  @media (min-width: 62.5em) {
+    .footer--landing {
+      height: 14em; } }
   .footer--landing .footer__link-container {
     display: flex;
     flex-direction: column;
@@ -153,6 +186,14 @@ body {
     width: 100%;
     height: 20em;
     padding-bottom: 2em; }
+    @media (min-width: 62.5em) {
+      .footer--landing .footer__link-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 5em; } }
     .footer--landing .footer__link-container .footer__link {
       margin: 0.9em;
       color: #FFFFFF;
@@ -175,6 +216,9 @@ body {
     height: 7em;
     color: white;
     font-family: "Alegreya", sans-serif; }
+    @media (min-width: 62.5em) {
+      .footer--landing .footer__copyright {
+        height: 10em; } }
 
 .header--landing {
   height: 15%; }
@@ -372,7 +416,8 @@ body {
     height: auto;
     transition-duration: 1s;
     color: #000000;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Nunito", sans-serif;
+    text-align: center; }
     @media (min-width: 62.5em) {
       .landing__values--large .values__description-open {
         margin-right: 9%; } }

@@ -1,7 +1,10 @@
 import React, {Component} from 'react';
 import Content from '../../base/content/content';
 
-import Image from './assets/designer-lady.jpeg';
+import Image1 from './assets/designer-lady.jpeg';
+import Image2 from './assets/mountainside.jpeg';
+import Image3 from './assets/dress-rack.jpeg';
+import Image4 from './assets/girl-night.jpeg';
 export const LandingValues = class LandingValues extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +15,7 @@ export const LandingValues = class LandingValues extends Component {
     this.handleClickFour = this.handleClickFour.bind(this);
 
     this.state = {
-      oneOpen: false,
+      oneOpen: true,
       twoOpen: false,
       threeOpen: false,
       fourOpen: false
@@ -63,7 +66,7 @@ export const LandingValues = class LandingValues extends Component {
             <span className='value__descriptor'>Transparent</span>
           </div>   
           <div className={ 'value__description ' + oneStatus }>
-            <img src={Image} alt='lady'/>
+            <img src={Image1} alt='lady'/>
             <span>From start to finish, our process is entirely visible.</span>
           </div>
 
@@ -71,7 +74,7 @@ export const LandingValues = class LandingValues extends Component {
             <span className='value__descriptor'>Speed</span>
           </div>
           <div className={ 'value__description ' + twoStatus }>
-            <img src={Image} alt='lady'/>
+            <img src={Image2} alt='lady'/>
             <span>The faster you get your order, the better.</span>
           </div>
 
@@ -79,7 +82,7 @@ export const LandingValues = class LandingValues extends Component {
             <span className='value__descriptor'>Ethical</span>
           </div>
           <div className={ 'value__description ' + threeStatus }>
-            <img src={Image} alt='lady'/>
+            <img src={Image3} alt='lady'/>
             <span>Knowing that your clothes were made in humane conditions by people paid fair wages is important.</span>
           </div>
 
@@ -87,7 +90,7 @@ export const LandingValues = class LandingValues extends Component {
             <span className='value__descriptor'>Economic</span>
           </div>
           <div className={ 'value__description ' + fourStatus }>
-            <img src={Image} alt='lady'/>
+            <img src={Image4} alt='lady'/>
             <span>At the end of the day, money matters. We help you cut costs and keep quality.</span>
           </div>
         </Content> );

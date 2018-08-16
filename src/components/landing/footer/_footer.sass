@@ -2,9 +2,13 @@
   background: $base-black
   height: 26em
   padding-top: 2em
+  +media(S1000)
+    height: 14em
   .footer__link-container
     +cc-flex(100%, 20em)
     padding-bottom: 2em
+    +media(S1000)
+      +custom-flex(row, space-around, center, 100%, 5em)
     .footer__link
       margin: 0.9em
       color: $base-white
@@ -19,3 +23,5 @@
     +rc-flex(100%, 7em)
     color: white
     font-family: $tertiary-font
+    +media(S1000)
+      height: 10em
