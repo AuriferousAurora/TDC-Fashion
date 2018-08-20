@@ -29,20 +29,18 @@ class ProductCreator extends Component {
           quantity={this.props.quantity}
           handleQuantityChange={this.props.handleQuantityChange}/>
         <span className='add-feature'>Add Feature</span>
-        <div className='add-sketches'>
-          <FileInput className={'add-sketch-input'}
-            name={'sketch-upload'}
-            value={this.props.sketches}
-            controlFunction={this.props.handleSketchChange}
-            accept={'.png, .gif, .tif, .jpg, .jpeg, .bpm'}/>
-        </div>
-        <div className='add-tech-sheets'>
-          <FileInput className={'add-tech-sheet-input'}
-            name={'tech-sheet-upload'}
-            value={this.props.techSheets}
-            controlFunction={this.props.handleTechSheetChange}
-            accept={'.xlsx, .pdf'}/>
-        </div>
+        <FileInput className={'add-sketch-input'}
+          label={'Add sketches'}
+          name={'sketch-upload'}
+          value={this.props.sketches}
+          controlFunction={this.props.handleSketchChange}
+          accept={'.png, .gif, .tif, .jpg, .jpeg, .bpm'}/>
+        <FileInput className={'add-tech-sheet-input'}
+          label={'Add tech sheets'}
+          name={'tech-sheet-upload'}
+          value={this.props.techSheets}
+          controlFunction={this.props.handleTechSheetChange}
+          accept={'.xlsx, .pdf'}/>
       </div>
     );
   }

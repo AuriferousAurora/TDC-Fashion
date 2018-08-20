@@ -678,14 +678,26 @@ body {
   .product-form__description-input input:focus ~ label, .product-form__description-input input:valid ~ label {
     left: 0; }
 
-.add-sketches, .add-tech-sheets {
+.add-sketch-input, .add-tech-sheet-input {
   display: flex;
+  justify-content: start;
   align-items: center;
+  margin: 0.5em 0;
   width: 100%;
-  height: 2em; }
-
-.add-sketch-input input, .add-tech-sheet-input input {
-  opacity: 0; }
+  height: 2em;
+  border: 2px solid #353535;
+  font-family: "Nunito", sans-serif; }
+  .add-sketch-input label, .add-tech-sheet-input label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #353535;
+    color: #FFFFFF;
+    width: 200px;
+    height: 100%; }
+  .add-sketch-input input, .add-tech-sheet-input input {
+    display: flex;
+    opacity: 0; }
 
 .product-details {
   display: flex;

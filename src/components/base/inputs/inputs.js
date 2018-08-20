@@ -52,7 +52,7 @@ SelectInput.propTypes = {
 
 export const FileInput = (props) => (
     <div className={'form__file-input-container ' + props.className}>  
-    <label htmlFor={props.name}>Add sketches</label>    
+    <label htmlFor={props.name}>{props.label}</label>    
     <input 
       id={props.name}
       className='form__file-input'
