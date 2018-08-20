@@ -34,13 +34,15 @@ class ProductCreator extends Component {
           name={'sketch-upload'}
           value={this.props.sketches}
           controlFunction={this.props.handleSketchChange}
-          accept={'.png, .gif, .tif, .jpg, .jpeg, .bpm'}/>
+          accept={'.png, .gif, .tif, .jpg, .jpeg, .bpm'}
+          multiple/>
         <FileInput className={'add-tech-sheet-input'}
           label={'Add tech sheets'}
           name={'tech-sheet-upload'}
           value={this.props.techSheets}
           controlFunction={this.props.handleTechSheetChange}
-          accept={'.xlsx, .pdf'}/>
+          accept={'.xlsx, .pdf'}
+          multiple/>
       </div>
     );
   }

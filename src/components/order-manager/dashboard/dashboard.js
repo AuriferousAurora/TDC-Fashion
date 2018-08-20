@@ -41,7 +41,7 @@ class DashboardOrderManager extends Component {
       size: '',
       color: '',
       quantity: '',
-      sketches: null,
+      sketches: [],
       techSheets: null
     };
 
@@ -50,6 +50,7 @@ class DashboardOrderManager extends Component {
     this.handleSizeChange = this.handleSizeChange.bind(this);
     this.handleColorChange = this.handleColorChange.bind(this);
     this.handleQuantityChange = this.handleQuantityChange.bind(this);
+    this.handleLoadImage = this.handleLoadImage.bind(this);
     this.handleSketchChange = this.handleSketchChange.bind(this);
     this.handleTechSheetChange = this.handleTechSheetChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -80,13 +81,32 @@ class DashboardOrderManager extends Component {
     console.log(this.state.quantity);
   }
 
+  handleLoadImage(file){
+    if(file) {
+      let reader = new FileReader();
+      reader.onloadend = () => {
+        console.log('Reader.result ' + reader.result);
+        this.setState(() => ({ sketches: reader.result}));
+      };
+      reader.readAsDataURL(file);
+    }
+  }
+
   handleSketchChange(e) {
-    this.setState({ sketches: e.target.value });
-    console.log(this.state.sketches);
+    e.preventDefault();
+    let files = e.target.files;
+    let index;
+    for (index = 0; index < files.length; index++) {
+      let file = files[index];
+      this.handleLoadImage(file);
+      // let url = reader.readAsDataURL(file);
+      // images.push({'image': file, 'imagePreviewURL': url});
+      // console.log(images);
+    }
   }
 
   handleTechSheetChange(e) {
-    this.setState({ techSheet: e.target.value });
+    this.setState({ techSheets: e.target.value });
     console.log(this.state.techSheets);
   }
 
