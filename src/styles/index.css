@@ -59,6 +59,10 @@ body {
     width: 50%;
     height: 100%; }
 
+.form__file-input-container {
+  width: 100%;
+  height: auto; }
+
 .header {
   display: flex;
   align-items: center;
@@ -674,13 +678,22 @@ body {
   .product-form__description-input input:focus ~ label, .product-form__description-input input:valid ~ label {
     left: 0; }
 
+.add-sketches, .add-tech-sheets {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 2em; }
+
+.add-sketch-input input, .add-tech-sheet-input input {
+  opacity: 0; }
+
 .product-details {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
   height: 8em;
-  background: red; }
+  background: #F7F7F7; }
 
 .product-instantiation {
   width: 100%;

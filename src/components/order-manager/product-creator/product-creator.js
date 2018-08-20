@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { SingleInput } from '../../base/inputs/inputs';
+import { SingleInput, FileInput } from '../../base/inputs/inputs';
 import ProductDetails from '../product-details/product-details';
 
 function BookMark(props) {
@@ -30,10 +30,18 @@ class ProductCreator extends Component {
           handleQuantityChange={this.props.handleQuantityChange}/>
         <span className='add-feature'>Add Feature</span>
         <div className='add-sketches'>
-          <button className='add-sketch'>Add sketches</button>
+          <FileInput className={'add-sketch-input'}
+            name={'sketch-upload'}
+            value={this.props.sketches}
+            controlFunction={this.props.handleSketchChange}
+            accept={'.png, .gif, .tif, .jpg, .jpeg, .bpm'}/>
         </div>
         <div className='add-tech-sheets'>
-          <button className='add-tech-sheet'>Add technical sheet</button>
+          <FileInput className={'add-tech-sheet-input'}
+            name={'tech-sheet-upload'}
+            value={this.props.techSheets}
+            controlFunction={this.props.handleTechSheetChange}
+            accept={'.xlsx, .pdf'}/>
         </div>
       </div>
     );

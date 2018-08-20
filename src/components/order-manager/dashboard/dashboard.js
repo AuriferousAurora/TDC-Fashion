@@ -40,7 +40,9 @@ class DashboardOrderManager extends Component {
       description: '',
       size: '',
       color: '',
-      quantity: ''
+      quantity: '',
+      sketches: null,
+      techSheets: null
     };
 
     this.handleRefPoChange = this.handleRefPoChange.bind(this);
@@ -48,6 +50,8 @@ class DashboardOrderManager extends Component {
     this.handleSizeChange = this.handleSizeChange.bind(this);
     this.handleColorChange = this.handleColorChange.bind(this);
     this.handleQuantityChange = this.handleQuantityChange.bind(this);
+    this.handleSketchChange = this.handleSketchChange.bind(this);
+    this.handleTechSheetChange = this.handleTechSheetChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -74,6 +78,16 @@ class DashboardOrderManager extends Component {
   handleQuantityChange(e) {
     this.setState({ quantity: e.target.value });
     console.log(this.state.quantity);
+  }
+
+  handleSketchChange(e) {
+    this.setState({ sketches: e.target.value });
+    console.log(this.state.sketches);
+  }
+
+  handleTechSheetChange(e) {
+    this.setState({ techSheet: e.target.value });
+    console.log(this.state.techSheets);
   }
 
   handleSubmit(e) {
@@ -104,7 +118,11 @@ class DashboardOrderManager extends Component {
                   color={this.state.color}
                   handleColorChange={this.handleColorChange}
                   quantity={this.state.quantity}
-                  handleQuantityChange={this.handleQuantityChange}/>
+                  handleQuantityChange={this.handleQuantityChange}
+                  sketches={this.state.sketches}
+                  handleSketchChange={this.handleSketchChange}
+                  techSheets={this.state.techSheets}
+                  handleTechSheetChange={this.handleTechSheetChange}/>
               }
             />
           </div>
