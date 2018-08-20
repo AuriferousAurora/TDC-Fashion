@@ -33,11 +33,11 @@ export const SelectInput = (props) => (
       name={props.name}
       onChange={props.controlFunction}
       required>
-      <option value='S'></option>
-      <option value='M'></option>
-      <option value='L'></option>
-      <option value='XL'></option>
-      <option value='XXL'></option>
+      <option value='S'>S</option>
+      <option value='M'>M</option>
+      <option value='L'>L</option>
+      <option value='XL'>XL</option>
+      <option value='XXL'>XXL</option>
     </select>
     <span className='input__highlight'></span>
     <span className='input__bar'></span>

@@ -38,12 +38,16 @@ class DashboardOrderManager extends Component {
     this.state = { 
       refPo: '',
       description: '',
-      size: ''
+      size: '',
+      color: '',
+      quantity: ''
     };
 
     this.handleRefPoChange = this.handleRefPoChange.bind(this);
     this.handleDescriptionChange = this.handleDescriptionChange.bind(this);
-    this.handleSizeSelectChange = this.handleSizeSelectChange.bind(this);
+    this.handleSizeChange = this.handleSizeChange.bind(this);
+    this.handleColorChange = this.handleColorChange.bind(this);
+    this.handleQuantityChange = this.handleQuantityChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
@@ -57,9 +61,19 @@ class DashboardOrderManager extends Component {
     console.log(this.state.description);
   }
 
-  handleSizeSelectChange(e) {
+  handleSizeChange(e) {
     this.setState({ size: e.target.value });
     console.log(this.state.size);
+  }
+
+  handleColorChange(e) {
+    this.setState({ color: e.target.value });
+    console.log(this.state.color);
+  }
+
+  handleQuantityChange(e) {
+    this.setState({ quantity: e.target.value });
+    console.log(this.state.quantity);
   }
 
   handleSubmit(e) {
@@ -84,7 +98,13 @@ class DashboardOrderManager extends Component {
               render={() => 
                 <ProductCreator 
                   description={this.state.description} 
-                  handleDescriptionChange={this.handleDescriptionChange} handleSizeSelectChange={this.handleSizeSelectChange}/>
+                  handleDescriptionChange={this.handleDescriptionChange} 
+                  size={this.state.size}
+                  handleSizeChange={this.handleSizeChange}
+                  color={this.state.color}
+                  handleColorChange={this.handleColorChange}
+                  quantity={this.state.quantity}
+                  handleQuantityChange={this.handleQuantityChange}/>
               }
             />
           </div>
