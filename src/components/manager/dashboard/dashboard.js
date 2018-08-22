@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from '../../base/buttons/buttons';
-import OrderHead from '../order-head/order-head';
-import OrderBody from '../order-body/order-body';
+import { OrderHead } from '../order-head/order-head';
+import { OrderBody } from '../order-body/order-body';
 
 import { Route } from 'react-router-dom';
 

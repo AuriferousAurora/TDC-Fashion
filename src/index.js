@@ -26,9 +26,7 @@ import 'typeface-alegreya';
 
 // This variable declaration returns the landing page component so that it can be used as a part of the 'component' functionality provided by React Router on line 37.
 
-const Landing = () => (
-  <LandingPage/>
-);
+const Landing = () => ( <LandingPage/> );
 
 // This component acts as the index for the project. Upon loading, the landing page is rendered, and each other route is accessible via various means.
 
@@ -37,13 +35,7 @@ class Application extends Component {
     return (
       <Fragment>
         <Route exact={true} path='/' component={Landing} />
-        <Route path='/order' render={() => <OrderManager/>} />
-        <Route path='/tour' render={() => <div className='tour' style={{width: '100vw', height: '100vh'}}><h1>Tour</h1></div>}/>
-        <Route path='/process' render={() => <div className='process' style={{width: '100vw', height: '100vh'}}><h1>Process</h1></div>}/>
-        <Route path='/facilities' render={() => <div className='facilities' style={{width: '100vw', height: '100vh'}}><h1>Facilities</h1></div>}/>
-        <Route path='/suppliers' render={() => <div className='suppliers' style={{width: '100vw', height: '100vh'}}><h1>Suppliers</h1></div>}/>
-        <Route path='/newsletter' render={() => <div className='newsletter' style={{width: '100vw', height: '100vh'}}><h1>Newsletter</h1></div>}/>
-        <Route path='/about-us' render={() => <div className='about-us' style={{width: '100vw', height: '100vh'}}><h1>About Us</h1></div>}/>
+        <Route path='/order' render={ () => <OrderManager/> } />
       </Fragment>
     );
   }

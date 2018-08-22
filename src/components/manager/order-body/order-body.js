@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
 import { SingleInput, FileInput } from '../../base/inputs/inputs';
-import Selector from '../selector/selector';
+import { Selector } from '../selector/selector';
 
-function BookMark(props) {
-  return <div className='bookmark'><span>01</span></div>;
-}
+const BookMark = (props) => ( <div className='bookmark'><span>01</span></div> );
 
-class OrderBody extends Component {
+export const OrderBody = class OrderBody extends Component {
   render() {
     return (
       <div className='product-creator'>
@@ -47,5 +45,3 @@ class OrderBody extends Component {
     );
   }
 }
-
-export default OrderBody;

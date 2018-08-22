@@ -99,11 +99,6 @@ body {
   overflow-x: hidden;
   height: 100%; }
 
-.sidebar--order-manager {
-  width: 10%;
-  background: #746f75;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5); }
-
 .sidebar__icon {
   display: flex;
   justify-content: center;
@@ -849,5 +844,9 @@ body {
   to {
     width: 0;
     background: transparent; } }
+.sidebar--manager {
+  width: 10%;
+  background: #746f75;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=index.css.map */
