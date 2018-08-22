@@ -38,12 +38,12 @@ class Application extends Component {
       <Fragment>
         <Route exact={true} path='/' component={Landing} />
         <Route path='/order' render={() => <OrderManager/>} />
-        <Route path='/tour' render={() => <div className='tour' style={{width: '100vw', height: '100vh'}}><h1>Tour</h1></div>}/>
+        {/* <Route path='/tour' render={() => <div className='tour' style={{width: '100vw', height: '100vh'}}><h1>Tour</h1></div>}/>
         <Route path='/process' render={() => <div className='process' style={{width: '100vw', height: '100vh'}}><h1>Process</h1></div>}/>
         <Route path='/facilities' render={() => <div className='facilities' style={{width: '100vw', height: '100vh'}}><h1>Facilities</h1></div>}/>
         <Route path='/suppliers' render={() => <div className='suppliers' style={{width: '100vw', height: '100vh'}}><h1>Suppliers</h1></div>}/>
         <Route path='/newsletter' render={() => <div className='newsletter' style={{width: '100vw', height: '100vh'}}><h1>Newsletter</h1></div>}/>
-        <Route path='/about-us' render={() => <div className='about-us' style={{width: '100vw', height: '100vh'}}><h1>About Us</h1></div>}/>
+        <Route path='/about-us' render={() => <div className='about-us' style={{width: '100vw', height: '100vh'}}><h1>About Us</h1></div>}/> */}
       </Fragment>
     );
   }
