@@ -10,10 +10,10 @@ body {
   text-decoration: none; }
 
 .button {
-  border: none;
-  border-radius: 0.125em;
-  background: #E2B64D;
-  width: 189px;
+  border: solid 0.125em #E2B64D;
+  border-radius: 1.4375em;
+  background: none;
+  width: auto;
   height: 46px;
   color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  border-radius: 0.125em;
+  border-radius: 1.4375em;
   background: #E2B64D;
   padding: 0 1em;
   width: auto;
@@ -482,13 +482,13 @@ body {
     width: 80%;
     height: 100%; }
     .order-dashboard__top-bar .top-bar__right .top-bar__button--cancel {
-      background: #E2B64D;
+      border: solid 2px #E2B64D;
       margin-right: 9px; }
     .order-dashboard__top-bar .top-bar__right .top-bar__button--save {
-      background: #353535;
+      border: solid 2px #353535;
       margin-right: 9px; }
     .order-dashboard__top-bar .top-bar__right .top-bar__button--req-quote {
-      background: #9c6e00;
+      border: solid 2px #9c6e00;
       width: 210px; }
 
 .order-dashboard__body {
@@ -560,7 +560,7 @@ body {
     background: #F7F7F7; }
     .product-creator .add-sketches button.add-sketch {
       border: none;
-      border-radius: 0.125em;
+      border-radius: 1.4375em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
       background-color: #353535;
       width: 151px;
@@ -575,7 +575,7 @@ body {
     background: #F7F7F7; }
     .product-creator .add-tech-sheets button.add-tech-sheet {
       border: none;
-      border-radius: 0.125em;
+      border-radius: 1.4375em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
       background-color: #353535;
       width: 151px;
@@ -766,7 +766,7 @@ body {
       color: #51433a; }
     .product-instantiation .add-product-container .add-product {
       border: none;
-      border-radius: 0.125em;
+      border-radius: 1.4375em;
       box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5);
       background-color: #E2B64D;
       width: 169px;

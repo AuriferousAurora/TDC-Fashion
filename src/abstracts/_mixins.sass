@@ -27,10 +27,10 @@
 
 // Button stuff. Not sure if I'm gonna keep all this or tranfer it into a singular base component. Gotta learn more about React before I can decided that.
 
-=button($w: auto, $bg-color: $primary-color)
-  border: none
+=button($w: auto, $border-color: $primary-color)
+  border: solid 0.125em $border-color
   border-radius: $button-border-radius
-  background: $bg-color
+  background: none
   width: $w
   height: 46px
   color: $base-white
