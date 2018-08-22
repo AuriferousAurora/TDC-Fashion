@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import Content from '../../base/content/content';
 
-import Image1 from './assets/designer-lady.jpeg';
-import Image2 from './assets/mountainside.jpeg';
-import Image3 from './assets/dress-rack.jpeg';
-import Image4 from './assets/girl-night.jpeg';
+import Image1 from './assets/fashion-designer.jpeg';
+import Image2 from './assets/international-sourcing.jpeg';
+import Image3 from './assets/fashion-brand.jpeg';
+import Image4 from './assets/apparel.jpeg';
 export const LandingValues = class LandingValues extends Component {
   constructor(props) {
     super(props);

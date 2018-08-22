@@ -3,7 +3,7 @@ import React from 'react';
 import Content from '../../base/content/content';
 import { LinkButton } from '../../base/buttons/buttons';
 
-import BgImage from './assets/europe.jpg';
+import BgImage from './assets/international-fashion.jpg';
 
 // const bgStyleSmall = { background: '#F7F7F7' }
 
