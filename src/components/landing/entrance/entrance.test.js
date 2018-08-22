@@ -2,7 +2,7 @@ import React from 'react';
 import Content from '../../base/content/content';
 import { LinkButton } from '../../base/buttons/buttons';
 
-import BgImage from './assets/pinchy-girl.jpeg';
+import BgImage from './assets/entrance.jpeg';
 // import tdcIcon from './assets/dark-tdc-icon.png';
 // import HalfShirtIcon from './assets/half-shirt-right.png';
 
