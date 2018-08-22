@@ -13,9 +13,10 @@ body {
   border: solid 0.125em #E2B64D;
   border-radius: 1.4375em;
   background: none;
+  padding: 0 1em;
   width: auto;
   height: 46px;
-  color: #FFFFFF;
+  color: #E2B64D;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
   letter-spacing: -0.8px; }
@@ -24,13 +25,14 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  border: solid 0.125em #E2B64D;
   border-radius: 1.4375em;
-  background: #E2B64D;
+  background: none;
   padding: 0 1em;
   width: auto;
   height: 2.1em;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #E2B64D;
   font-family: Arial, Helvetica, sans-serif;
   /* Refactor this into appropriate 'em' value. */
   font-size: 22px;
@@ -483,13 +485,17 @@ body {
     height: 100%; }
     .order-dashboard__top-bar .top-bar__right .top-bar__button--cancel {
       border: solid 2px #E2B64D;
-      margin-right: 9px; }
+      margin-right: 9px;
+      color: #E2B64D; }
     .order-dashboard__top-bar .top-bar__right .top-bar__button--save {
       border: solid 2px #353535;
-      margin-right: 9px; }
+      margin-right: 9px;
+      color: #353535; }
     .order-dashboard__top-bar .top-bar__right .top-bar__button--req-quote {
       border: solid 2px #9c6e00;
-      width: 210px; }
+      color: #9c6e00; }
+      .order-dashboard__top-bar .top-bar__right .top-bar__button--req-quote span {
+        padding: 1em; }
 
 .order-dashboard__body {
   padding-top: 20px;
@@ -775,8 +781,6 @@ body {
       font-family: Arial, Helvetica, sans-serif;
       font-size: 16px;
       letter-spacing: -0.6px; }
-    .product-instantiation .add-product-container .add-product__link-button {
-      box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.5); }
 
 .product-form__ref-po-input {
   display: flex;
