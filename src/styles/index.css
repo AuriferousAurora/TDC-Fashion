@@ -94,6 +94,9 @@ body {
     width: 5%;
     height: 100%; }
 
+.notification {
+  z-index: 9700; }
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -520,6 +523,15 @@ body {
     letter-spacing: -2.1px;
     text-align: center;
     color: #BDBDBD; }
+
+.order-notification {
+  display: flex;
+  position: sticky;
+  top: 1em;
+  right: 1em;
+  width: 21.5625em;
+  height: 2.125em;
+  background: #353535; }
 
 .product-creator {
   display: flex;

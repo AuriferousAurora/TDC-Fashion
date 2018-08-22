@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import { Button } from '../../base/buttons/buttons';
+import { OrderNotification } from '../notifications/notifications';
 import { OrderHead } from '../order-head/order-head';
 import { OrderBody } from '../order-body/order-body';
 
@@ -11,7 +12,9 @@ class TopBarRight extends Component {
       <div className='top-bar__right'>
         <Button className='top-bar__button--cancel'>{<span>CANCEL</span>}</Button>
         <Button className='top-bar__button--save'>{<span>SAVE</span>}</Button>
-        <Button className='top-bar__button--req-quote'>{<span>REQUEST QUOTE</span>}</Button>
+        <Button className='top-bar__button--req-quote'>{<span>REQUEST QUOTE</span>}
+        </Button>
+        <OrderNotification/>
       </div>
     );
   }
@@ -113,6 +116,8 @@ class DashboardOrderManager extends Component {
 
   render() {
     return (
+      <Fragment>
+
       <form id='product-form' 
         className='form product-form'
         onSubmit={this.handleSubmit}>
@@ -144,6 +149,7 @@ class DashboardOrderManager extends Component {
           </div>
         </div>
       </form>
+      </Fragment>
     );
   }  
 }
