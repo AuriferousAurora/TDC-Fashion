@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
 import { SingleInput, FileInput } from '../../base/inputs/inputs';
-import ProductDetails from '../product-details/product-details';
+import Selector from '../selector/selector';
 
 function BookMark(props) {
   return <div className='bookmark'><span>01</span></div>;
 }
 
-class ProductCreator extends Component {
+class OrderBody extends Component {
   render() {
     return (
       <div className='product-creator'>
@@ -22,7 +22,7 @@ class ProductCreator extends Component {
             controlFunction={this.props.handleDescriptionChange}
             label={'Description'} />
         </div>
-        <ProductDetails size={this.props.size}
+        <Selector size={this.props.size}
           handleSizeChange={this.props.handleSizeChange} 
           color={this.props.color}
           handleColorChange={this.props.handleColorChange}
@@ -48,4 +48,4 @@ class ProductCreator extends Component {
   }
 }
 
-export default ProductCreator;
+export default OrderBody;

@@ -3,13 +3,13 @@ import { Route } from 'react-router-dom';
 
 // Component Import Declarations //
 
-import Sidebar from '../../components/base/sidebar/sidebar';
-import EmptyView from '../../components/order-manager/empty-view/empty-view';
-import DashboardOrderManager from '../../components/order-manager/dashboard/dashboard.test';
+import { Sidebar } from '../../components/base/sidebar/sidebar';
+import EmptyView from '../../components/manager/empty/empty';
+import DashboardOrderManager from '../../components/manager/dashboard/dashboard';
 
 // Icon Import Declarations //
 
-import Logo from '../../components/base/logo/logo.js';
+import { Logo } from '../../components/base/logo/logo.js';
 import DashboardIcon from './icons/IconDashboardEnable.png';
 import NewOrderIcon from './icons/IconNewOrder.png';
 import PaymentIcon from './icons/IconPaymentsDisable.png';
@@ -32,9 +32,9 @@ class OrderManager extends Component {
             <div className='sidebar__icon sidebar__icon--shipping'><img src={ShippingIcon} alt='shipping'/></div>
             <div className='sidebar__icon sidebar__icon--notifications'><img src={NotificationIcon} alt='notifications'/></div>
           </Sidebar>
-          <Route exact={true} path='/' render={() => <EmptyView/>}/>
+          <Route exact={true} path='/order' render={() => <EmptyView/>}/>
           {/* If it becomes necessary to pass props to a component, use React Router's render method instead of component method. Check out this link if stuck: https://tylermcginnis.com/react-router-pass-props-to-components/*/}
-          <Route path='/dashboard' component={Dashboard}/>
+          <Route path='/order/dashboard' component={Dashboard}/>
         </Fragment>
     );
   }

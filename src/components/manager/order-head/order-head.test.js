@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { LinkButton } from '../../base/buttons/buttons';
 import { SingleInput } from '../../base/inputs/inputs.test';
 
-class ProductInstantiation extends Component {
+class OrderHead extends Component {
   render() {
     return (
       <div className='product-instantiation'>

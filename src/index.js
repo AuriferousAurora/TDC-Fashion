@@ -16,7 +16,7 @@ import './styles/index.css';
 // ================================= //
 
 import LandingPage from './pages/landing/landing';
-import OrderManager from './pages/order-manager/order-manager';
+import OrderManager from './pages/manager/manager';
 
 // This section declares imports for typefaces. Each typeface is included via NPM and listed inside the 'package.json' file within the 'dependencies' object.
 

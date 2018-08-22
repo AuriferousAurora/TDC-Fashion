@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Button } from '../../base/buttons/buttons';
-import ProductInstantiation from '../product-instantiation/product-instantiation';
-import ProductCreator from '../product-creator/product-creator';
+import OrderHead from '../order-head/order-head';
+import OrderBody from '../order-body/order-body';
 
 import { Route } from 'react-router-dom';
 
@@ -126,11 +126,11 @@ class DashboardOrderManager extends Component {
             <TopBarRight/>
           </div>
           <div className='order-dashboard__body'>
-            <ProductInstantiation refPo={this.state.refPo} handleRefPoChange={this.handleRefPoChange}/>
+            <OrderHead refPo={this.state.refPo} handleRefPoChange={this.handleRefPoChange}/>
             <Route 
               path='/order/dashboard/product-details' 
               render={() => 
-                <ProductCreator 
+                <OrderBody
                   description={this.state.description} 
                   handleDescriptionChange={this.handleDescriptionChange} 
                   size={this.state.size}
