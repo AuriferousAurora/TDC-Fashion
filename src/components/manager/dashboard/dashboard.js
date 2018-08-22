@@ -6,16 +6,12 @@ import { OrderBody } from '../order-body/order-body';
 import { Route } from 'react-router-dom';
 
 class TopBarRight extends Component {
-  createMarkUp(innerHTML) {
-    return { __html: innerHTML };
-  }
-
   render() {
     return (
       <div className='top-bar__right'>
         <Button className='top-bar__button--cancel'>{<span>CANCEL</span>}</Button>
-        <Button className='top-bar__button--save'>{<span>CANCEL</span>}</Button>
-        <Button className='top-bar__button--req-quote'>{<span>CANCEL</span>}</Button>
+        <Button className='top-bar__button--save'>{<span>SAVE</span>}</Button>
+        <Button className='top-bar__button--req-quote'>{<span>REQUEST QUOTE</span>}</Button>
       </div>
     );
   }
