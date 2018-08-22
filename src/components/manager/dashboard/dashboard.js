@@ -1,11 +1,10 @@
-import React, { Component, Fragment } from 'react';
-import { Button } from '../../base/buttons/buttons';
-import { OrderNotification } from '../notifications/notifications';
-import { OrderHead } from '../order-head/order-head';
-import { OrderBody } from '../order-body/order-body';
-
+import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 
+import { Form } from '../../base/form/form';
+import { Button } from '../../base/buttons/buttons';
+import { OrderHead } from '../order-head/order-head';
+import { OrderBody } from '../order-body/order-body';
 class TopBarRight extends Component {
   render() {
     return (
@@ -14,12 +13,10 @@ class TopBarRight extends Component {
         <Button className='top-bar__button--save'>{<span>SAVE</span>}</Button>
         <Button className='top-bar__button--req-quote'>{<span>REQUEST QUOTE</span>}
         </Button>
-        <OrderNotification/>
       </div>
     );
   }
 }
-
 class TopBarLeft extends Component {
   render() {
     return (
@@ -30,8 +27,7 @@ class TopBarLeft extends Component {
     );
   }
 }
-
-class DashboardOrderManager extends Component {
+export const DashboardManager = class DashboardManager extends Component {
   constructor(props) {
     super(props);
     this.state = { 
@@ -116,11 +112,9 @@ class DashboardOrderManager extends Component {
 
   render() {
     return (
-      <Fragment>
-
-      <form id='product-form' 
-        className='form product-form'
-        onSubmit={this.handleSubmit}>
+      <Form id={'product-form'}
+        className={'product-form'}
+        handleSubmit={this.handleSubmit}>
         <div className='order-dashboard'>
           <div className='order-dashboard__top-bar'>
             <TopBarLeft/>
@@ -128,10 +122,8 @@ class DashboardOrderManager extends Component {
           </div>
           <div className='order-dashboard__body'>
             <OrderHead refPo={this.state.refPo} handleRefPoChange={this.handleRefPoChange}/>
-            <Route 
-              path='/order/dashboard/product-details' 
-              render={() => 
-                <OrderBody
+            <Route path='/order/dashboard/product-details' 
+              render={() => <OrderBody
                   description={this.state.description} 
                   handleDescriptionChange={this.handleDescriptionChange} 
                   size={this.state.size}
@@ -143,15 +135,10 @@ class DashboardOrderManager extends Component {
                   sketches={this.state.sketches}
                   handleSketchChange={this.handleSketchChange}
                   techSheets={this.state.techSheets}
-                  handleTechSheetChange={this.handleTechSheetChange}/>
-              }
-            />
+                  handleTechSheetChange={this.handleTechSheetChange}/>}/>
           </div>
         </div>
-      </form>
-      </Fragment>
+      </Form>
     );
   }  
 }
-
-export default DashboardOrderManager;

@@ -5,19 +5,17 @@ import { Route } from 'react-router-dom';
 
 import { SidebarManager } from '../../components/manager/sidebar/sidebar';
 import { Empty } from '../../components/manager/empty/empty';
-import DashboardOrderManager from '../../components/manager/dashboard/dashboard';
+import { DashboardManager } from '../../components/manager/dashboard/dashboard';
 
-const Dashboard = () => ( <DashboardOrderManager/> );
+const Dashboard = () => ( <DashboardManager/> );
 class OrderManager extends Component {
   render() {
     return (
         <Fragment>
           <SidebarManager/>
           <Route exact={true} path='/order' render={() => <Empty/>}/>
-
-          {/* If it becomes necessary to pass props to a component, use React Router's render method instead of component method. Check out this link if stuck: https://tylermcginnis.com/react-router-pass-props-to-components/*/}
-
           <Route path='/order/dashboard' component={Dashboard}/>
+          {/* React Router's component method cannot pass props. https://tylermcginnis.com/react-router-pass-props-to-components/*/}
         </Fragment>
     );
   }

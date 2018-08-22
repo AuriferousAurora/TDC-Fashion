@@ -1,8 +1,8 @@
 import React from 'react';
 
 import { Sidebar } from '../../base/sidebar/sidebar';
-
 import { Logo } from '../../base/logo/logo.js';
+
 import DashboardIcon from './assets/IconDashboardEnable.png';
 import NewOrderIcon from './assets/IconNewOrder.png';
 import PaymentIcon from './assets/IconPaymentsDisable.png';
@@ -17,4 +17,4 @@ export const SidebarManager = (props) => (
     <div className='sidebar__icon sidebar__icon--payments'><img src={PaymentIcon} alt='payment'/></div>
     <div className='sidebar__icon sidebar__icon--shipping'><img src={ShippingIcon} alt='shipping'/></div>
     <div className='sidebar__icon sidebar__icon--notifications'><img src={NotificationIcon} alt='notifications'/></div>
-</Sidebar> );
+  </Sidebar> );
