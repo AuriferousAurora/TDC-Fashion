@@ -526,12 +526,18 @@ body {
 
 .order-notification {
   display: flex;
-  position: sticky;
-  top: 1em;
-  right: 1em;
+  justify-content: start;
+  align-items: center;
+  position: absolute;
+  top: 0.5em;
+  right: 2.5em;
+  padding-left: 1em;
   width: 21.5625em;
-  height: 2.125em;
-  background: #353535; }
+  height: 3.5em;
+  background: #353535;
+  color: #FFFFFF;
+  font-family: "Alegreya", sans-serif;
+  font-size: 1em; }
 
 .product-creator {
   display: flex;
