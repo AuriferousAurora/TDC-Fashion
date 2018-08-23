@@ -733,14 +733,6 @@ body {
     display: flex;
     opacity: 0; }
 
-.product-details {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  height: 8em;
-  background: #F7F7F7; }
-
 .product-instantiation {
   width: 100%;
   height: 278px;
@@ -881,6 +873,63 @@ body {
   to {
     width: 0;
     background: transparent; } }
+.order-label {
+  box-sizing: border-box;
+  display: flex;
+  margin-top: 2em;
+  padding-left: 2%;
+  width: 100%;
+  height: 7em;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  font-family: "Nunito", sans-serif; }
+  .order-label .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 70%;
+    height: 100%; }
+    .order-label .left span {
+      display: block; }
+    .order-label .left .order-number {
+      font-size: 1.125em;
+      font-weight: bold; }
+    .order-label .left .product-count {
+      margin: 0.2em 0;
+      color: rgba(81, 67, 58, 0.87);
+      font-size: 0.9em; }
+  .order-label .right {
+    width: 30%;
+    height: 100%;
+    background: #9e9e9e;
+    color: rgba(255, 255, 255, 0.87); }
+    .order-label .right .information {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      width: 80%;
+      height: 100%; }
+      .order-label .right .information .quote-status {
+        font-size: 1.25em;
+        font-weight: bold; }
+    .order-label .right .icon-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20%;
+      height: 100%; }
+
+.product-details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 8em;
+  background: #F7F7F7; }
+
 .sidebar--manager {
   width: 10%;
   background: #746f75;

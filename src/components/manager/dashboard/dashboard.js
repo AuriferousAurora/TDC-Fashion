@@ -6,6 +6,7 @@ import { Button } from '../../base/buttons/buttons';
 import { LinkButton } from '../../base/buttons/buttons';
 import { OrderHead } from '../order-head/order-head';
 import { OrderBody } from '../order-body/order-body';
+import { OrderLabel } from '../../manager/order-label/order-label';
 import { NotificationOrder } from '../notifications/notifications';
 class TopBarRight extends Component {
   render() {
@@ -141,6 +142,7 @@ export const DashboardManager = class DashboardManager extends Component {
                   handleSketchChange={this.handleSketchChange}
                   techSheets={this.state.techSheets}
                   handleTechSheetChange={this.handleTechSheetChange}/>}/>
+              <OrderLabel/>
           </div>
         </div>
       </Form>
