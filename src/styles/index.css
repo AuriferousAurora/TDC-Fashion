@@ -96,6 +96,23 @@ body {
 
 .notification {
   z-index: 9700; }
+  .notification .message {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 90%;
+    height: 100%; }
+    .notification .message span {
+      padding-left: 1em; }
+  .notification .close {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    width: 10%;
+    height: 100%; }
+    .notification .close span {
+      font-style: normal;
+      margin-right: 0.5em; }
 
 .sidebar {
   position: fixed;
@@ -526,18 +543,16 @@ body {
 
 .order-notification {
   display: flex;
-  justify-content: start;
-  align-items: center;
   position: absolute;
   top: 0.5em;
   right: 2.5em;
-  padding-left: 1em;
   width: 21.5625em;
   height: 3.5em;
   background: #353535;
   color: #FFFFFF;
   font-family: "Alegreya", sans-serif;
-  font-size: 1em; }
+  font-size: 1.2em;
+  font-style: italic; }
 
 .product-creator {
   display: flex;
