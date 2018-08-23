@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 
 import { Form } from '../../base/form/form';
 import { Button } from '../../base/buttons/buttons';
+import { LinkButton } from '../../base/buttons/buttons';
 import { OrderHead } from '../order-head/order-head';
 import { OrderBody } from '../order-body/order-body';
 import { NotificationOrder } from '../notifications/notifications';
@@ -11,7 +12,7 @@ class TopBarRight extends Component {
     return (
       <div className='top-bar__right'>
         <Button className='top-bar__button--cancel'>{<span>CANCEL</span>}</Button>
-        <Button className='top-bar__button--save'>{<span>SAVE</span>}</Button>
+        <LinkButton className='top-bar__button--save' destination={'/order/dashboard/product-details/notification'}>{<span>SAVE</span>}</LinkButton>
         <Button className='top-bar__button--req-quote'>{<span>REQUEST QUOTE</span>}
         </Button>
       </div>
@@ -28,6 +29,8 @@ class TopBarLeft extends Component {
     );
   }
 }
+
+const OrderNotification = () => ( <NotificationOrder/> );
 export const DashboardManager = class DashboardManager extends Component {
   constructor(props) {
     super(props);
@@ -116,7 +119,7 @@ export const DashboardManager = class DashboardManager extends Component {
       <Form id={'product-form'}
         className={'product-form'}
         handleSubmit={this.handleSubmit}>
-        <NotificationOrder/>
+        <Route path='/order/dashboard/product-details/notification' component={NotificationOrder}/>
         <div className='order-dashboard'>
           <div className='order-dashboard__top-bar'>
             <TopBarLeft/>
