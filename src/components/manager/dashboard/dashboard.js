@@ -87,6 +87,7 @@ export const DashboardManager = class DashboardManager extends Component {
       reader.onloadend = () => {
         console.log('Reader.result ' + reader.result);
         this.setState(() => ({ sketches: reader.result}));
+        console.log("Type of array index: " + typeof(this.state.sketches[0]));
       };
       reader.readAsDataURL(file);
     }
