@@ -4,8 +4,8 @@ import { Route } from 'react-router-dom';
 // Component Import Declarations //
 
 import Sidebar from '../../components/base/sidebar/sidebar';
-import EmptyView from '../../components/order-manager/empty-view/empty-view';
-import DashboardOrderManager from '../../components/order-manager/dashboard/dashboard.test';
+import EmptyView from '../../components/order-manager/empty/empty';
+import Dashboard from '../../components/manager/dashboard/dashboard.test';
 
 // Icon Import Declarations //
 

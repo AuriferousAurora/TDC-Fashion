@@ -49,3 +49,24 @@ SelectInput.propTypes = {
   name: PropTypes.string.isRequired,
   controlFunction: PropTypes.func.isRequired,
 };
+
+export const FileInput = (props) => (
+    <div className={'form__file-input-container ' + props.className}>  
+    <label htmlFor={props.name}>{props.label}</label>    
+    <input 
+      id={props.name}
+      className='form__file-input'
+      name={props.name}
+      type='file'
+      value={props.content}
+      onChange={props.controlFunction}
+      accept={props.acceptedTypes}
+      required />
+  </div>
+)
+
+FileInput.propTypes = {
+  name: PropTypes.string.isRequired,
+  controlFunction: PropTypes.func.isRequired,
+  accept: PropTypes.oneOf(['.png, .gif, .tif, .jpg, .jpeg, .bpm', '.xlsx, .pdf']).isRequired
+};

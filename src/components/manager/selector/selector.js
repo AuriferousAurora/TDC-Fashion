@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { SelectInput, SingleInput } from '../../base/inputs/inputs';
-class ProductDetails extends Component {
+
+export const Selector = class Selector extends Component {
   render() {
     return (
       <div className='product-details'>
@@ -23,5 +24,3 @@ class ProductDetails extends Component {
     );
   }
 }
-
-export default ProductDetails;

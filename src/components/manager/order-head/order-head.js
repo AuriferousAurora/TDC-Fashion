@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { LinkButton } from '../../base/buttons/buttons';
 import { SingleInput } from '../../base/inputs/inputs';
 
-class ProductInstantiation extends Component {
+export const OrderHead = class OrderHead extends Component {
   render() {
     return (
       <div className='product-instantiation'>
@@ -34,5 +34,3 @@ class ProductInstantiation extends Component {
     );
   }
 }
-
-export default ProductInstantiation;

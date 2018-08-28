@@ -35,14 +35,18 @@
   .top-bar__right
     +custom-flex(row, flex-end, center, 80%, 100%)
     .top-bar__button--cancel
-      background: $primary-color
+      border: solid 2px $primary-color
       margin-right: 9px
+      color: $primary-color
     .top-bar__button--save
-      background: $secondary-color
+      border: solid 2px $secondary-color
       margin-right: 9px
+      color: $secondary-color
     .top-bar__button--req-quote
-      background: $primary-color-dark
-      width: 210px
+      border: solid 2px $primary-color-dark
+      color: $primary-color-dark
+      span
+        padding: 1em
 
 .order-dashboard__body
   padding-top: 20px

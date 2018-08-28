@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 
-import { SingleInput } from '../../base/inputs/inputs';
-import ProductDetails from '../product-details/product-details';
+import { SingleInput, FileInput } from '../../base/inputs/inputs';
+import { Selector } from '../selector/selector';
 
-function BookMark(props) {
-  return <div className='bookmark'><span>01</span></div>;
-}
+const BookMark = (props) => ( <div className='bookmark'><span>01</span></div> );
 
-class ProductCreator extends Component {
+export const OrderBody = class OrderBody extends Component {
   render() {
     return (
       <div className='product-creator'>
@@ -22,22 +20,28 @@ class ProductCreator extends Component {
             controlFunction={this.props.handleDescriptionChange}
             label={'Description'} />
         </div>
-        <ProductDetails size={this.props.size}
+        <Selector size={this.props.size}
           handleSizeChange={this.props.handleSizeChange} 
           color={this.props.color}
           handleColorChange={this.props.handleColorChange}
           quantity={this.props.quantity}
           handleQuantityChange={this.props.handleQuantityChange}/>
         <span className='add-feature'>Add Feature</span>
-        <div className='add-sketches'>
-          <button className='add-sketch'>Add sketches</button>
-        </div>
-        <div className='add-tech-sheets'>
-          <button className='add-tech-sheet'>Add technical sheet</button>
-        </div>
+        <FileInput className={'add-sketch-input'}
+          label={'Add sketches'}
+          name={'sketch-upload'}
+          value={this.props.sketches}
+          controlFunction={this.props.handleSketchChange}
+          accept={'.png, .gif, .tif, .jpg, .jpeg, .bpm'}
+          multiple/>
+        <FileInput className={'add-tech-sheet-input'}
+          label={'Add tech sheets'}
+          name={'tech-sheet-upload'}
+          value={this.props.techSheets}
+          controlFunction={this.props.handleTechSheetChange}
+          accept={'.xlsx, .pdf'}
+          multiple/>
       </div>
     );
   }
 }
-
-export default ProductCreator;
