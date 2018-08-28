@@ -29,7 +29,7 @@ const media = () => {
 export const LandingEntrance = (props) => (
   <Content className={ 'landing__entrance' } style={ media() }>
     <h1 className='entrance__tagline'>Sustainable Ethical Premium Fashion on Demand</h1>
-    <LinkButton className='entrance__action-button' destination='/'>
+    <LinkButton className='entrance__action-button' destination='/order'>
       <span>Get Started Now</span>
     </LinkButton>
   </Content>
