@@ -1,23 +1,25 @@
 import React, { Component, Fragment } from 'react';
 
-import Entrance from '../../components/landing/entrance/entrance';
-import { LandingHeader } from '../../components/landing/header/header';
+import { LandingEntrance } from '../../components/landing/entrance/entrance.test';
+import { LandingHeader } from '../../components/landing/header/header.test';
 import { LandingFooter } from '../../components/landing/footer/footer';
 import { LandingSidebar } from '../../components/landing/sidebar/sidebar';
+import { LandingProcess } from '../../components/landing/process/process';
+import { LandingValues } from '../../components/landing/values/values';
+import { LandingAbout } from '../../components/landing/about/about';
+
+// import { ParticleBackground } from '../../components/landing/particles/particle';
  
 class LandingPage extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
       sidebarOn: false
     }
-    this.handleSidebarToggle = this.handleSidebarToggle.bind(this);
+    
     this.handleClick = this.handleClick.bind(this);
     this.handleOutsideClick = this.handleOutsideClick.bind(this); 
-  }
-
-  handleSidebarToggle() {
-    this.setState(prevState => ({ sidebarOn: !this.setState.sidebarOn }));
   }
 
   handleClick() {
@@ -27,21 +29,24 @@ class LandingPage extends Component {
   }
 
   handleOutsideClick(e) {
-    if (this.node.contains(e.target)) {
-      return;
-    }
     this.handleClick();
   }
 
   render() {
     return (
       <Fragment>
-        <LandingHeader onClick={this.handleSidebarToggle} />
+        <LandingHeader onClick={this.handleClick} />
         <LandingSidebar isOpen={this.state.sidebarOn}/>
-        <Entrance/>
-        <div className='ent-yellow'></div>
-        <div className='ent-green'></div>
-        <div className='ent-orange'></div>
+        {/* <ParticleBackground>
+          <h1 className='entrance__tagline' style={{zIndex: 5}}>Sustainable Ethical Premium Fashion on Demand</h1>
+          <LinkButton className='entrance__action-button' destination='/order'>
+            <span>Get Started Now</span>
+          </LinkButton>
+        </ParticleBackground> */}
+        <LandingEntrance/>
+        <LandingProcess/>
+        <LandingValues/>
+        <LandingAbout/>
         <LandingFooter/>
       </Fragment>
     );

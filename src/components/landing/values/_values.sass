@@ -1,0 +1,100 @@
+.landing__values
+  display: flex
+  flex-direction: column
+  padding: 2em 0
+  width: 100%
+  height: auto
+  background: $background-color
+  .values__title-container
+    +rc-flex(100%, auto)
+    margin-bottom: 1em
+    h2.value__title
+      margin: 0
+      color: $secondary-color
+      font-family: $primary-font
+  .value__title-bar
+    display: flex
+    justify-content: flex-end
+    margin: 3% 0
+    padding: 0.5em
+    width: 90%
+    background: $primary-color
+    box-shadow: $standard-box-shadow
+  .value__descriptor
+    margin-right: 0.5em
+    color: $base-black
+    font-family: $secondary-font
+    font-size: 1.7em
+  .value__description
+    width: 93%
+    background: $base-white
+  .values__description-open
+    display: flex
+    box-sizing: border-box
+    padding: 10%
+    height: auto
+    transition-duration: 1s
+    color: $base-black
+    font-family: $secondary-font
+  .values__description-closed
+    display: none
+
+.landing__values--large
+  display: flex
+  position: relative
+  flex-direction: column
+  padding: 2em 0
+  width: 100%
+  height: auto
+  max-height: 41.25em
+  background: $background-color
+  .values__title-container
+    +rc-flex(100%, auto)
+    margin-bottom: 1em
+    h2.value__title
+      margin: 0
+      color: $secondary-color
+      font-family: $primary-font
+  .value__title-bar
+    display: flex
+    justify-content: flex-end
+    margin: 3% 0
+    padding: 0.5em
+    width: 25%
+    max-width: 33.75em
+    min-height: 2em
+    background: $primary-color
+    box-shadow: $standard-box-shadow
+  .value__descriptor
+    margin-right: 0.5em
+    color: $base-black
+    font-family: $secondary-font
+    font-size: 1.7em
+  .value__description
+    width: 55%
+    max-width: 45.5em
+  .values__description-open
+    display: flex
+    flex-direction: column
+    position: absolute
+    top: 6em
+    right: 0
+    margin-right: 8%
+    height: auto
+    transition-duration: 1s
+    color: $base-black
+    font-family: $secondary-font
+    text-align: center
+    +media(S1000)
+      margin-right: 9%
+    +media(S1500)
+      margin-top: 2%
+      margin-right: 12%
+    img
+      width: 100%
+      height: 60%
+    span
+      margin-top: 0.5em
+
+  .values__description-closed
+    display: none

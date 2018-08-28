@@ -1,0 +1,24 @@
+.landing__about
+  +cc-flex(100%, 30%)
+  +media(S600)
+    height: 50%
+    span.about__title
+      font-size: 4em
+      font-weight: bold
+  span.about__title
+    display: inline-block
+    margin: 0
+    font-family: $secondary-font
+    font-size: 3em
+  +media(S1000)
+    height: 65%
+    span.about__title 
+      margin-right: 40%
+    .about__link-button
+      margin-right: 40%
+
+.about__link-button
+  box-shadow: $standard-box-shadow
+  border-radius: 23px
+
+

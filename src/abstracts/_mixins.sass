@@ -25,33 +25,34 @@
   width: $w
   height: $h
 
-// New shit. Not sure if I'm gonna keep all this or tranfer it into a singular base component. Gotta learn more about React before I can decided that.
+// Button stuff. Not sure if I'm gonna keep all this or tranfer it into a singular base component. Gotta learn more about React before I can decided that.
 
-=button($w: auto, $bg-color: $primary-color)
-  border: none
+=button($w: auto, $border-color: $primary-color, $font-color: $border-color)
+  border: solid 0.125em $border-color
   border-radius: $button-border-radius
-  background: $bg-color
+  background: none
+  padding: 0 1em
   width: $w
   height: 46px
-  color: $base-white
+  color: $font-color
   font-family: Arial, Helvetica, sans-serif
   font-size: 22px
   letter-spacing: -0.8px
 
-=link-button($w: auto, $bg-color: $primary-color)
+=link-button($w: auto, $border-color: $primary-color, $font-color: $border-color)
   display: flex
   flex-direction: row
   align-items: center
+  border: solid 0.125em $border-color
   border-radius: $button-border-radius
-  background: $bg-color
+  background: none
   padding: 0 1em
   width: $w
-  /* Refactor this into appropriate 'em' value. */
   height: 2.1em
   text-decoration: none
-  color: $base-white
+  color: $font-color
   font-family: Arial, Helvetica, sans-serif
-  /* Same deal here. */
+  /* Refactor this into appropriate 'em' value. */
   font-size: 22px
   letter-spacing: -0.8px
 
@@ -67,6 +68,12 @@
   font-family: Arial, Helvetica, sans-serif
   font-size: 16px
   letter-spacing: -0.6px
+
+=content($width, $height)
+  width: $width
+  height: $height
+
+// This mixin applies to inputs and applies animations to them.
 
 =animated-input($w, $h)
   display: flex
@@ -134,6 +141,22 @@
     to 
       width: 0 
       background: transparent
+
+// Media query conditional declarations. //
+
+=media($size)
+  @if $size == S475
+    @media (min-width: $S475)
+      @content
+  @else if $size == S600
+    @media (min-width: $S600)
+      @content
+  @else if $size == S1000
+    @media (min-width: $S1000)
+      @content
+  @else if $size == S1500
+    @media (min-width: $S1500)
+      @content
 
 
 

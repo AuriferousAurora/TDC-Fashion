@@ -33,11 +33,11 @@ export const SelectInput = (props) => (
       name={props.name}
       onChange={props.controlFunction}
       required>
-      <option value='S'></option>
-      <option value='M'></option>
-      <option value='L'></option>
-      <option value='XL'></option>
-      <option value='XXL'></option>
+      <option value='S'>S</option>
+      <option value='M'>M</option>
+      <option value='L'>L</option>
+      <option value='XL'>XL</option>
+      <option value='XXL'>XXL</option>
     </select>
     <span className='input__highlight'></span>
     <span className='input__bar'></span>
@@ -48,4 +48,25 @@ export const SelectInput = (props) => (
 SelectInput.propTypes = {
   name: PropTypes.string.isRequired,
   controlFunction: PropTypes.func.isRequired,
+};
+
+export const FileInput = (props) => (
+    <div className={'form__file-input-container ' + props.className}>  
+    <label htmlFor={props.name}>{props.label}</label>    
+    <input 
+      id={props.name}
+      className='form__file-input'
+      name={props.name}
+      type='file'
+      value={props.content}
+      onChange={props.controlFunction}
+      accept={props.acceptedTypes}
+      required />
+  </div>
+)
+
+FileInput.propTypes = {
+  name: PropTypes.string.isRequired,
+  controlFunction: PropTypes.func.isRequired,
+  accept: PropTypes.oneOf(['.png, .gif, .tif, .jpg, .jpeg, .bpm', '.xlsx, .pdf']).isRequired
 };

@@ -1,9 +1,27 @@
 .footer--landing
   background: $base-black
-  height: 25em
-  .footer__link, .bottom__link
-    color: $base-white
+  height: 26em
+  padding-top: 2em
+  +media(S1000)
+    height: 14em
+  .footer__link-container
+    +cc-flex(100%, 20em)
+    padding-bottom: 2em
+    +media(S1000)
+      +custom-flex(row, space-around, center, 100%, 5em)
+    .footer__link
+      margin: 0.9em
+      color: $base-white
+      font-family: $tertiary-font
+  .footer__social-container
+    +rc-flex(100%, 7em)
+    img.landing__social-link
+      margin: 0.5em
+      padding: 0.3em
+      width: 2.5em
+  .footer__copyright
+    +rc-flex(100%, 7em)
+    color: white
     font-family: $tertiary-font
-    font-style: italic
-  .footer__link
-    margin: 3%
+    +media(S1000)
+      height: 10em

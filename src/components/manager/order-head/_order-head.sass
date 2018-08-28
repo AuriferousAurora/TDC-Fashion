@@ -1,0 +1,46 @@
+.product-instantiation
+  width: 100%
+  height: 278px
+  box-shadow: $standard-box-shadow
+  background-color: $base-white
+  .label-container
+    +custom-flex(row, flex-start, center, 100%, 102px)
+    .order-number-label
+      +rc-flex(241px, 45px)
+      background-color: #51433a
+      .label__left
+        +rc-flex(232px, 100%)
+      .order-number
+        width: 161px
+        height: 33px
+        font-family: Arial
+        font-size: 30px
+        letter-spacing: -1.6px
+        color: $base-white
+      .label__right
+        width: 9px
+        height: 100%
+        background-color: $primary-color
+  .reference-po-container
+    +custom-flex(row, flex-start, flex-start, 100%, 84px)
+    padding-left: 10px
+    #test-input
+      width: 100%
+  .add-product-container
+    +custom-flex(row, space-between, flex-start, 100%, 92px)
+    box-sizing: border-box
+    padding: 0 14px
+    .products-label
+      width: 94px
+      height: 28px
+      font-family: Arial
+      font-size: 25px
+      letter-spacing: -1.3px
+      color: #51433a
+    .add-product
+      +small-button(169px, $primary-color)
+    .add-product__link-button
+
+.product-form__ref-po-input
+  +animated-input(100%, 30%)
+  padding: 0 2%

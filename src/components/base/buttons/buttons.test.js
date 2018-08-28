@@ -1,16 +1,7 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
-class ButtonBase extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   // this.handleClick = this.handleClick.bind(this);
-  // }
-
-  // handleClick() {
-  //   console.log('Click happened. You did it, you brilliant boy, you.');
-  //   alert('Frickedy-frick-frack, bro! You done did it!');
-  // }
-
+export const Button = class Button extends Component {
   render() {
     return (
       <button className={'button ' + this.props.className}>
@@ -19,5 +10,14 @@ class ButtonBase extends Component {
     );
   }
 }
-
-export default ButtonBase;
+export const LinkButton = class LinkButton extends Component {
+  render() {
+    return (
+      <Link 
+        className={'link-button ' + this.props.className}
+        to={this.props.destination}>
+        {this.props.children}
+      </Link>
+    );
+  }
+}
